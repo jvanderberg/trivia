@@ -4,7 +4,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Kabul is the capital of which country?",
-    choices: ["Afghanistan", "India", "Iran", "Maldives"],
+    choices: ["Afghanistan", "Pakistan", "Bhutan", "Bangladesh"],
     answer: "Afghanistan",
     explanation: "Kabul is the capital city of Afghanistan.",
   },
@@ -14,7 +14,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Asia borders Turkmenistan, Uzbekistan, and Tajikistan?",
-    choices: ["Iran", "Afghanistan", "Bhutan", "India"],
+    choices: ["Bangladesh", "Afghanistan", "Pakistan", "Bhutan"],
     answer: "Afghanistan",
     explanation:
       "Afghanistan is in Southern Asia and borders Turkmenistan, Uzbekistan, and Tajikistan.",
@@ -24,7 +24,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Albania?",
-    choices: ["Podgorica", "Skopje", "Bucharest", "Tirana"],
+    choices: ["Sofia", "Skopje", "Zagreb", "Tirana"],
     answer: "Tirana",
     explanation: "Tirana is the capital city of Albania.",
   },
@@ -34,7 +34,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southeast Europe borders Montenegro, Greece, and North Macedonia?",
-    choices: ["Albania", "Croatia", "Montenegro", "North Macedonia"],
+    choices: ["Albania", "Romania", "Croatia", "Bulgaria"],
     answer: "Albania",
     explanation:
       "Albania is in Southeast Europe and borders Montenegro, Greece, and North Macedonia.",
@@ -44,7 +44,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Algiers is the capital of which country?",
-    choices: ["Libya", "Morocco", "Sudan", "Algeria"],
+    choices: ["Tunisia", "Libya", "Morocco", "Algeria"],
     answer: "Algeria",
     explanation: "Algiers is the capital city of Algeria.",
   },
@@ -54,7 +54,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Northern Africa borders Morocco, Tunisia, and Libya?",
-    choices: ["Algeria", "Egypt", "Libya", "Morocco"],
+    choices: ["Algeria", "Egypt", "Sudan", "Libya"],
     answer: "Algeria",
     explanation:
       "Algeria is in Northern Africa and borders Morocco, Tunisia, and Libya.",
@@ -64,7 +64,12 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Andorra?",
-    choices: ["Valletta", "Andorra la Vella", "Athens", "Rome"],
+    choices: [
+      "Vatican City",
+      "Andorra la Vella",
+      "Athens",
+      "City of San Marino",
+    ],
     answer: "Andorra la Vella",
     explanation: "Andorra la Vella is the capital city of Andorra.",
   },
@@ -74,7 +79,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which landlocked country in Southern Europe has Andorra la Vella as its capital?",
-    choices: ["Malta", "Andorra", "Greece", "Italy"],
+    choices: ["Italy", "Andorra", "Cyprus", "Greece"],
     answer: "Andorra",
     explanation:
       "Andorra is a landlocked country in Southern Europe, and its capital is Andorra la Vella.",
@@ -84,12 +89,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Luanda is the capital of which country?",
-    choices: [
-      "Republic of the Congo",
-      "São Tomé and Príncipe",
-      "Angola",
-      "Gabon",
-    ],
+    choices: ["Cameroon", "Chad", "Angola", "Gabon"],
     answer: "Angola",
     explanation: "Luanda is the capital city of Angola.",
   },
@@ -99,7 +99,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Middle Africa borders Republic of the Congo, DR Congo, and Zambia?",
-    choices: ["DR Congo", "Equatorial Guinea", "Gabon", "Angola"],
+    choices: ["Gabon", "Cameroon", "Chad", "Angola"],
     answer: "Angola",
     explanation:
       "Angola is in Middle Africa and borders Republic of the Congo, DR Congo, and Zambia.",
@@ -109,7 +109,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Antigua and Barbuda?",
-    choices: ["Saint John's", "Port-au-Prince", "Kingston", "Basseterre"],
+    choices: ["Saint John's", "St. George's", "Santo Domingo", "Port of Spain"],
     answer: "Saint John's",
     explanation: "Saint John's is the capital city of Antigua and Barbuda.",
   },
@@ -119,10 +119,10 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt: "Which country in Caribbean has Saint John's as its capital?",
     choices: [
-      "Saint Vincent and the Grenadines",
-      "Antigua and Barbuda",
       "Saint Kitts and Nevis",
-      "Saint Lucia",
+      "Antigua and Barbuda",
+      "Trinidad and Tobago",
+      "Dominican Republic",
     ],
     answer: "Antigua and Barbuda",
     explanation:
@@ -133,7 +133,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Buenos Aires is the capital of which country?",
-    choices: ["Argentina", "Colombia", "Ecuador", "Guyana"],
+    choices: ["Argentina", "Venezuela", "Colombia", "Guyana"],
     answer: "Argentina",
     explanation: "Buenos Aires is the capital city of Argentina.",
   },
@@ -143,7 +143,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South America borders Brazil, Chile, and Paraguay?",
-    choices: ["Paraguay", "Argentina", "Ecuador", "Guyana"],
+    choices: ["Guyana", "Argentina", "Venezuela", "Colombia"],
     answer: "Argentina",
     explanation:
       "Argentina is in South America and borders Brazil, Chile, and Paraguay.",
@@ -153,7 +153,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Armenia?",
-    choices: ["Ankara", "Abu Dhabi", "Yerevan", "Damascus"],
+    choices: ["Baghdad", "Tbilisi", "Yerevan", "Amman"],
     answer: "Yerevan",
     explanation: "Yerevan is the capital city of Armenia.",
   },
@@ -163,7 +163,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Asia borders Azerbaijan, Georgia, and Iran?",
-    choices: ["Iraq", "Israel", "Jordan", "Armenia"],
+    choices: ["Syria", "Bahrain", "Lebanon", "Armenia"],
     answer: "Armenia",
     explanation:
       "Armenia is in Western Asia and borders Azerbaijan, Georgia, and Iran.",
@@ -173,7 +173,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Canberra is the capital of which country?",
-    choices: ["Kiribati", "Marshall Islands", "Australia", "Fiji"],
+    choices: ["Kiribati", "Samoa", "Australia", "Micronesia"],
     answer: "Australia",
     explanation: "Canberra is the capital city of Australia.",
   },
@@ -183,7 +183,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Australia and New Zealand has Canberra as its capital?",
-    choices: ["Samoa", "Solomon Islands", "Tonga", "Australia"],
+    choices: ["Micronesia", "Kiribati", "Samoa", "Australia"],
     answer: "Australia",
     explanation:
       "Australia is part of Australia and New Zealand, and Canberra is its capital city.",
@@ -193,7 +193,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Austria?",
-    choices: ["Budapest", "Warsaw", "Bratislava", "Vienna"],
+    choices: ["Ljubljana", "Prague", "Warsaw", "Vienna"],
     answer: "Vienna",
     explanation: "Vienna is the capital city of Austria.",
   },
@@ -203,7 +203,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central Europe borders Switzerland, Czechia, and Germany?",
-    choices: ["Austria", "Czechia", "Hungary", "Poland"],
+    choices: ["Austria", "Slovakia", "Slovenia", "Hungary"],
     answer: "Austria",
     explanation:
       "Austria is in Central Europe and borders Switzerland, Czechia, and Germany.",
@@ -213,7 +213,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Baku is the capital of which country?",
-    choices: ["Jordan", "Kuwait", "Azerbaijan", "Israel"],
+    choices: ["Jordan", "Bahrain", "Azerbaijan", "Armenia"],
     answer: "Azerbaijan",
     explanation: "Baku is the capital city of Azerbaijan.",
   },
@@ -222,7 +222,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia borders Iran, Russia, and Türkiye?",
-    choices: ["Saudi Arabia", "Syria", "Türkiye", "Azerbaijan"],
+    choices: ["Armenia", "Jordan", "Bahrain", "Azerbaijan"],
     answer: "Azerbaijan",
     explanation:
       "Azerbaijan is in Western Asia and borders Iran, Russia, and Türkiye.",
@@ -232,7 +232,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Bahamas?",
-    choices: ["Port of Spain", "Saint John's", "Bridgetown", "Nassau"],
+    choices: ["Roseau", "Havana", "Castries", "Nassau"],
     answer: "Nassau",
     explanation: "Nassau is the capital city of Bahamas.",
   },
@@ -241,7 +241,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Caribbean has Nassau as its capital?",
-    choices: ["Bahamas", "Barbados", "Cuba", "Dominica"],
+    choices: ["Bahamas", "Barbados", "Grenada", "Jamaica"],
     answer: "Bahamas",
     explanation:
       "Bahamas is part of Caribbean, and Nassau is its capital city.",
@@ -251,7 +251,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Manama is the capital of which country?",
-    choices: ["Palestine", "Qatar", "Bahrain", "Oman"],
+    choices: ["Jordan", "Armenia", "Bahrain", "Lebanon"],
     answer: "Bahrain",
     explanation: "Manama is the capital city of Bahrain.",
   },
@@ -260,7 +260,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia has Manama as its capital?",
-    choices: ["Kuwait", "Lebanon", "Oman", "Bahrain"],
+    choices: ["Lebanon", "Jordan", "Armenia", "Bahrain"],
     answer: "Bahrain",
     explanation:
       "Bahrain is part of Western Asia, and Manama is its capital city.",
@@ -270,7 +270,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Bangladesh?",
-    choices: ["Kathmandu", "Islamabad", "Dhaka", "Malé"],
+    choices: ["Malé", "Tehran", "Dhaka", "Kabul"],
     answer: "Dhaka",
     explanation: "Dhaka is the capital city of Bangladesh.",
   },
@@ -279,7 +279,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Southern Asia has Dhaka as its capital?",
-    choices: ["India", "Iran", "Maldives", "Bangladesh"],
+    choices: ["Bhutan", "Afghanistan", "Maldives", "Bangladesh"],
     answer: "Bangladesh",
     explanation:
       "Bangladesh is part of Southern Asia, and Dhaka is its capital city.",
@@ -289,7 +289,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Bridgetown is the capital of which country?",
-    choices: ["Bahamas", "Cuba", "Barbados", "Antigua and Barbuda"],
+    choices: ["Dominica", "Grenada", "Barbados", "Bahamas"],
     answer: "Barbados",
     explanation: "Bridgetown is the capital city of Barbados.",
   },
@@ -298,7 +298,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Caribbean has Bridgetown as its capital?",
-    choices: ["Cuba", "Dominica", "Dominican Republic", "Barbados"],
+    choices: ["Bahamas", "Dominica", "Grenada", "Barbados"],
     answer: "Barbados",
     explanation:
       "Barbados is part of Caribbean, and Bridgetown is its capital city.",
@@ -318,7 +318,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Europe borders Ukraine, Latvia, and Lithuania?",
-    choices: ["Ukraine", "Moldova", "Russia", "Belarus"],
+    choices: ["Moldova", "Russia", "Ukraine", "Belarus"],
     answer: "Belarus",
     explanation:
       "Belarus is in Eastern Europe and borders Ukraine, Latvia, and Lithuania.",
@@ -328,7 +328,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Brussels is the capital of which country?",
-    choices: ["Germany", "Liechtenstein", "Belgium", "France"],
+    choices: ["France", "Monaco", "Belgium", "Germany"],
     answer: "Belgium",
     explanation: "Brussels is the capital city of Belgium.",
   },
@@ -338,7 +338,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Europe borders France, Germany, and Luxembourg?",
-    choices: ["Switzerland", "France", "Germany", "Belgium"],
+    choices: ["Monaco", "Netherlands", "Switzerland", "Belgium"],
     answer: "Belgium",
     explanation:
       "Belgium is in Western Europe and borders France, Germany, and Luxembourg.",
@@ -348,7 +348,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Belize?",
-    choices: ["San Salvador", "Guatemala City", "Belmopan", "San José"],
+    choices: ["Tegucigalpa", "San José", "Belmopan", "Managua"],
     answer: "Belmopan",
     explanation: "Belmopan is the capital city of Belize.",
   },
@@ -357,7 +357,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Central America has Belmopan as its capital?",
-    choices: ["Guatemala", "Honduras", "Nicaragua", "Belize"],
+    choices: ["Panama", "Honduras", "Guatemala", "Belize"],
     answer: "Belize",
     explanation:
       "Belize is part of Central America, and Belmopan is its capital city.",
@@ -367,7 +367,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Porto-Novo is the capital of which country?",
-    choices: ["Benin", "Ivory Coast", "Liberia", "Mali"],
+    choices: ["Benin", "Ghana", "Niger", "Burkina Faso"],
     answer: "Benin",
     explanation: "Porto-Novo is the capital city of Benin.",
   },
@@ -377,7 +377,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Nigeria, Togo, and Burkina Faso?",
-    choices: ["Senegal", "Benin", "Niger", "Nigeria"],
+    choices: ["Gambia", "Benin", "Ghana", "Niger"],
     answer: "Benin",
     explanation:
       "Benin is in Western Africa and borders Nigeria, Togo, and Burkina Faso.",
@@ -387,7 +387,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Bhutan?",
-    choices: ["Kathmandu", "Islamabad", "Thimphu", "Malé"],
+    choices: ["Colombo", "Kathmandu", "Thimphu", "Tehran"],
     answer: "Thimphu",
     explanation: "Thimphu is the capital city of Bhutan.",
   },
@@ -397,7 +397,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which landlocked country in Southern Asia has Thimphu as its capital?",
-    choices: ["Sri Lanka", "Bangladesh", "Bhutan", "Pakistan"],
+    choices: ["India", "Iran", "Bhutan", "Bangladesh"],
     answer: "Bhutan",
     explanation:
       "Bhutan is a landlocked country in Southern Asia, and its capital is Thimphu.",
@@ -407,7 +407,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Sucre is the capital of which country?",
-    choices: ["Peru", "Suriname", "Bolivia", "Paraguay"],
+    choices: ["Colombia", "Guyana", "Bolivia", "Brazil"],
     answer: "Bolivia",
     explanation: "Sucre is the capital city of Bolivia.",
   },
@@ -417,7 +417,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South America borders Peru, Argentina, and Brazil?",
-    choices: ["Peru", "Suriname", "Uruguay", "Bolivia"],
+    choices: ["Colombia", "Guyana", "Ecuador", "Bolivia"],
     answer: "Bolivia",
     explanation:
       "Bolivia is in South America and borders Peru, Argentina, and Brazil.",
@@ -427,7 +427,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Bosnia and Herzegovina?",
-    choices: ["Skopje", "Bucharest", "Sarajevo", "Podgorica"],
+    choices: ["Sofia", "Belgrade", "Sarajevo", "Skopje"],
     answer: "Sarajevo",
     explanation: "Sarajevo is the capital city of Bosnia and Herzegovina.",
   },
@@ -438,9 +438,9 @@ export const generatedQuestionBank = [
     prompt:
       "Which country in Southeast Europe borders Serbia, Croatia, and Montenegro?",
     choices: [
-      "Croatia",
-      "Montenegro",
+      "Bulgaria",
       "North Macedonia",
+      "Albania",
       "Bosnia and Herzegovina",
     ],
     answer: "Bosnia and Herzegovina",
@@ -452,7 +452,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Gaborone is the capital of which country?",
-    choices: ["South Africa", "Eswatini", "Lesotho", "Botswana"],
+    choices: ["Namibia", "Eswatini", "Lesotho", "Botswana"],
     answer: "Botswana",
     explanation: "Gaborone is the capital city of Botswana.",
   },
@@ -462,7 +462,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Africa borders Zimbabwe, Namibia, and South Africa?",
-    choices: ["Botswana", "Namibia", "South Africa", "Eswatini"],
+    choices: ["Botswana", "Eswatini", "Lesotho", "Namibia"],
     answer: "Botswana",
     explanation:
       "Botswana is in Southern Africa and borders Zimbabwe, Namibia, and South Africa.",
@@ -472,7 +472,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Brazil?",
-    choices: ["Lima", "Brasília", "Georgetown", "Asunción"],
+    choices: ["Asunción", "Brasília", "Bogotá", "Buenos Aires"],
     answer: "Brasília",
     explanation: "Brasília is the capital city of Brazil.",
   },
@@ -482,7 +482,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South America borders Uruguay, Venezuela, and Argentina?",
-    choices: ["Peru", "Suriname", "Brazil", "Paraguay"],
+    choices: ["Guyana", "Chile", "Brazil", "Bolivia"],
     answer: "Brazil",
     explanation:
       "Brazil is in South America and borders Uruguay, Venezuela, and Argentina.",
@@ -492,7 +492,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Bandar Seri Begawan is the capital of which country?",
-    choices: ["Indonesia", "Laos", "Brunei", "Cambodia"],
+    choices: ["Vietnam", "Cambodia", "Brunei", "Myanmar"],
     answer: "Brunei",
     explanation: "Bandar Seri Begawan is the capital city of Brunei.",
   },
@@ -502,7 +502,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South-Eastern Asia borders only Malaysia and has Bandar Seri Begawan as its capital?",
-    choices: ["Singapore", "Brunei", "Myanmar", "Philippines"],
+    choices: ["Cambodia", "Brunei", "Myanmar", "Vietnam"],
     answer: "Brunei",
     explanation:
       "Brunei is in South-Eastern Asia, borders only Malaysia, and has Bandar Seri Begawan as its capital.",
@@ -512,7 +512,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Bulgaria?",
-    choices: ["Sofia", "Podgorica", "Skopje", "Bucharest"],
+    choices: ["Sofia", "Skopje", "Sarajevo", "Tirana"],
     answer: "Sofia",
     explanation: "Sofia is the capital city of Bulgaria.",
   },
@@ -522,7 +522,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southeast Europe borders Türkiye, Greece, and North Macedonia?",
-    choices: ["North Macedonia", "Bulgaria", "Croatia", "Montenegro"],
+    choices: ["Romania", "Bulgaria", "Albania", "Croatia"],
     answer: "Bulgaria",
     explanation:
       "Bulgaria is in Southeast Europe and borders Türkiye, Greece, and North Macedonia.",
@@ -532,7 +532,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Ouagadougou is the capital of which country?",
-    choices: ["Guinea", "Burkina Faso", "Gambia", "Ghana"],
+    choices: ["Ivory Coast", "Burkina Faso", "Sierra Leone", "Benin"],
     answer: "Burkina Faso",
     explanation: "Ouagadougou is the capital city of Burkina Faso.",
   },
@@ -542,7 +542,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Ivory Coast, Ghana, and Mali?",
-    choices: ["Liberia", "Mali", "Burkina Faso", "Ivory Coast"],
+    choices: ["Benin", "Cape Verde", "Burkina Faso", "Sierra Leone"],
     answer: "Burkina Faso",
     explanation:
       "Burkina Faso is in Western Africa and borders Ivory Coast, Ghana, and Mali.",
@@ -552,7 +552,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Burundi?",
-    choices: ["Port Louis", "Gitega", "Antananarivo", "Lilongwe"],
+    choices: ["Lusaka", "Gitega", "Asmara", "Dodoma"],
     answer: "Gitega",
     explanation: "Gitega is the capital city of Burundi.",
   },
@@ -562,7 +562,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders DR Congo, Rwanda, and Tanzania?",
-    choices: ["Uganda", "Zambia", "Burundi", "Tanzania"],
+    choices: ["Malawi", "Comoros", "Burundi", "Djibouti"],
     answer: "Burundi",
     explanation:
       "Burundi is in Eastern Africa and borders DR Congo, Rwanda, and Tanzania.",
@@ -572,7 +572,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Phnom Penh is the capital of which country?",
-    choices: ["Cambodia", "Myanmar", "Philippines", "Singapore"],
+    choices: ["Cambodia", "Malaysia", "Indonesia", "Thailand"],
     answer: "Cambodia",
     explanation: "Phnom Penh is the capital city of Cambodia.",
   },
@@ -582,7 +582,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South-Eastern Asia borders Thailand, Vietnam, and Laos?",
-    choices: ["Philippines", "Cambodia", "Malaysia", "Myanmar"],
+    choices: ["Myanmar", "Cambodia", "Malaysia", "Indonesia"],
     answer: "Cambodia",
     explanation:
       "Cambodia is in South-Eastern Asia and borders Thailand, Vietnam, and Laos.",
@@ -592,7 +592,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Cameroon?",
-    choices: ["Brazzaville", "São Tomé", "Juba", "Yaoundé"],
+    choices: ["Bangui", "Kinshasa", "Luanda", "Yaoundé"],
     answer: "Yaoundé",
     explanation: "Yaoundé is the capital city of Cameroon.",
   },
@@ -602,12 +602,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Middle Africa borders Nigeria, Central African Republic, and Chad?",
-    choices: [
-      "Cameroon",
-      "Equatorial Guinea",
-      "Gabon",
-      "Republic of the Congo",
-    ],
+    choices: ["Cameroon", "Gabon", "Angola", "DR Congo"],
     answer: "Cameroon",
     explanation:
       "Cameroon is in Middle Africa and borders Nigeria, Central African Republic, and Chad.",
@@ -617,7 +612,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Ottawa is the capital of which country?",
-    choices: ["Mexico", "Canada", "United States"],
+    choices: ["United States", "Canada", "Mexico"],
     answer: "Canada",
     explanation: "Ottawa is the capital city of Canada.",
   },
@@ -627,7 +622,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in North America borders only United States and has Ottawa as its capital?",
-    choices: ["Mexico", "Canada", "United States"],
+    choices: ["United States", "Canada", "Mexico"],
     answer: "Canada",
     explanation:
       "Canada is in North America, borders only United States, and has Ottawa as its capital.",
@@ -637,7 +632,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Cape Verde?",
-    choices: ["Porto-Novo", "Praia", "Freetown", "Lomé"],
+    choices: ["Accra", "Praia", "Porto-Novo", "Abuja"],
     answer: "Praia",
     explanation: "Praia is the capital city of Cape Verde.",
   },
@@ -646,7 +641,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Africa has Praia as its capital?",
-    choices: ["Burkina Faso", "Gambia", "Cape Verde", "Benin"],
+    choices: ["Ivory Coast", "Burkina Faso", "Cape Verde", "Sierra Leone"],
     answer: "Cape Verde",
     explanation:
       "Cape Verde is part of Western Africa, and Praia is its capital city.",
@@ -657,9 +652,9 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt: "Bangui is the capital of which country?",
     choices: [
-      "DR Congo",
-      "Equatorial Guinea",
-      "Gabon",
+      "Republic of the Congo",
+      "São Tomé and Príncipe",
+      "Cameroon",
       "Central African Republic",
     ],
     answer: "Central African Republic",
@@ -670,7 +665,12 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Middle Africa borders Sudan, Cameroon, and Chad?",
-    choices: ["Central African Republic", "Cameroon", "Chad", "DR Congo"],
+    choices: [
+      "Central African Republic",
+      "Republic of the Congo",
+      "São Tomé and Príncipe",
+      "Equatorial Guinea",
+    ],
     answer: "Central African Republic",
     explanation:
       "Central African Republic is in Middle Africa and borders Sudan, Cameroon, and Chad.",
@@ -680,7 +680,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Chad?",
-    choices: ["N'Djamena", "Bangui", "Kinshasa", "Malabo"],
+    choices: ["N'Djamena", "Kinshasa", "Libreville", "Luanda"],
     answer: "N'Djamena",
     explanation: "N'Djamena is the capital city of Chad.",
   },
@@ -690,7 +690,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Middle Africa borders Nigeria, Sudan, and Cameroon?",
-    choices: ["Central African Republic", "Chad", "Angola", "Cameroon"],
+    choices: ["DR Congo", "Chad", "Gabon", "Angola"],
     answer: "Chad",
     explanation:
       "Chad is in Middle Africa and borders Nigeria, Sudan, and Cameroon.",
@@ -700,7 +700,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Santiago is the capital of which country?",
-    choices: ["Peru", "Suriname", "Uruguay", "Chile"],
+    choices: ["Colombia", "Brazil", "Guyana", "Chile"],
     answer: "Chile",
     explanation: "Santiago is the capital city of Chile.",
   },
@@ -710,7 +710,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South America borders Peru, Argentina, and Bolivia?",
-    choices: ["Chile", "Suriname", "Uruguay", "Venezuela"],
+    choices: ["Chile", "Colombia", "Brazil", "Guyana"],
     answer: "Chile",
     explanation:
       "Chile is in South America and borders Peru, Argentina, and Bolivia.",
@@ -720,7 +720,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of China?",
-    choices: ["Seoul", "Beijing", "Ulan Bator", "Pyongyang"],
+    choices: ["Tokyo", "Beijing", "Pyongyang", "Seoul"],
     answer: "Beijing",
     explanation: "Beijing is the capital city of China.",
   },
@@ -739,7 +739,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Bogotá is the capital of which country?",
-    choices: ["Chile", "Colombia", "Bolivia", "Brazil"],
+    choices: ["Argentina", "Colombia", "Chile", "Bolivia"],
     answer: "Colombia",
     explanation: "Bogotá is the capital city of Colombia.",
   },
@@ -748,7 +748,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in South America borders Ecuador, Panama, and Peru?",
-    choices: ["Chile", "Ecuador", "Colombia", "Brazil"],
+    choices: ["Bolivia", "Argentina", "Colombia", "Chile"],
     answer: "Colombia",
     explanation:
       "Colombia is in South America and borders Ecuador, Panama, and Peru.",
@@ -758,7 +758,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Comoros?",
-    choices: ["Kigali", "Victoria", "Moroni", "Maputo"],
+    choices: ["Mogadishu", "Kigali", "Moroni", "Maputo"],
     answer: "Moroni",
     explanation: "Moroni is the capital city of Comoros.",
   },
@@ -767,7 +767,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Eastern Africa has Moroni as its capital?",
-    choices: ["Malawi", "Mauritius", "Mozambique", "Comoros"],
+    choices: ["Burundi", "Eritrea", "Mauritius", "Comoros"],
     answer: "Comoros",
     explanation:
       "Comoros is part of Eastern Africa, and Moroni is its capital city.",
@@ -777,7 +777,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "San José is the capital of which country?",
-    choices: ["Costa Rica", "Belize", "El Salvador", "Guatemala"],
+    choices: ["Costa Rica", "El Salvador", "Guatemala", "Nicaragua"],
     answer: "Costa Rica",
     explanation: "San José is the capital city of Costa Rica.",
   },
@@ -786,7 +786,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Central America has San José as its capital?",
-    choices: ["Nicaragua", "Costa Rica", "Guatemala", "Honduras"],
+    choices: ["Nicaragua", "Costa Rica", "El Salvador", "Guatemala"],
     answer: "Costa Rica",
     explanation:
       "Costa Rica is part of Central America, and San José is its capital city.",
@@ -796,7 +796,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Croatia?",
-    choices: ["Zagreb", "Sarajevo", "Sofia", "Podgorica"],
+    choices: ["Zagreb", "Skopje", "Tirana", "Sofia"],
     answer: "Zagreb",
     explanation: "Zagreb is the capital city of Croatia.",
   },
@@ -806,7 +806,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southeast Europe borders Bosnia and Herzegovina, Hungary, and Montenegro?",
-    choices: ["Bulgaria", "Croatia", "Albania", "Bosnia and Herzegovina"],
+    choices: ["Bulgaria", "Croatia", "Albania", "Romania"],
     answer: "Croatia",
     explanation:
       "Croatia is in Southeast Europe and borders Bosnia and Herzegovina, Hungary, and Montenegro.",
@@ -816,7 +816,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Havana is the capital of which country?",
-    choices: ["Trinidad and Tobago", "Antigua and Barbuda", "Bahamas", "Cuba"],
+    choices: ["Grenada", "Haiti", "Jamaica", "Cuba"],
     answer: "Cuba",
     explanation: "Havana is the capital city of Cuba.",
   },
@@ -825,7 +825,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Caribbean has Havana as its capital?",
-    choices: ["Cuba", "Bahamas", "Barbados", "Dominica"],
+    choices: ["Cuba", "Grenada", "Haiti", "Jamaica"],
     answer: "Cuba",
     explanation: "Cuba is part of Caribbean, and Havana is its capital city.",
   },
@@ -834,7 +834,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Cyprus?",
-    choices: ["Vatican City", "Nicosia", "City of San Marino", "Madrid"],
+    choices: ["Lisbon", "Nicosia", "Valletta", "Athens"],
     answer: "Nicosia",
     explanation: "Nicosia is the capital city of Cyprus.",
   },
@@ -843,7 +843,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Southern Europe has Nicosia as its capital?",
-    choices: ["Portugal", "San Marino", "Cyprus", "Malta"],
+    choices: ["Andorra", "Italy", "Cyprus", "Greece"],
     answer: "Cyprus",
     explanation:
       "Cyprus is part of Southern Europe, and Nicosia is its capital city.",
@@ -853,7 +853,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Prague is the capital of which country?",
-    choices: ["Czechia", "Austria", "Hungary", "Poland"],
+    choices: ["Czechia", "Austria", "Slovakia", "Slovenia"],
     answer: "Czechia",
     explanation: "Prague is the capital city of Czechia.",
   },
@@ -863,7 +863,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central Europe borders Poland, Slovakia, and Austria?",
-    choices: ["Hungary", "Czechia", "Slovenia", "Austria"],
+    choices: ["Austria", "Czechia", "Slovenia", "Hungary"],
     answer: "Czechia",
     explanation:
       "Czechia is in Central Europe and borders Poland, Slovakia, and Austria.",
@@ -873,7 +873,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Denmark?",
-    choices: ["Tallinn", "Copenhagen", "Stockholm", "London"],
+    choices: ["Tallinn", "Copenhagen", "Reykjavik", "Stockholm"],
     answer: "Copenhagen",
     explanation: "Copenhagen is the capital city of Denmark.",
   },
@@ -893,7 +893,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Djibouti is the capital of which country?",
-    choices: ["Ethiopia", "Kenya", "Madagascar", "Djibouti"],
+    choices: ["Burundi", "Ethiopia", "Malawi", "Djibouti"],
     answer: "Djibouti",
     explanation: "Djibouti is the capital city of Djibouti.",
   },
@@ -903,7 +903,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Ethiopia, Somalia, and Eritrea?",
-    choices: ["Djibouti", "Seychelles", "Somalia", "Tanzania"],
+    choices: ["Djibouti", "Burundi", "Malawi", "Tanzania"],
     answer: "Djibouti",
     explanation:
       "Djibouti is in Eastern Africa and borders Ethiopia, Somalia, and Eritrea.",
@@ -913,7 +913,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Dominica?",
-    choices: ["Port of Spain", "Roseau", "Castries", "Kingstown"],
+    choices: ["Castries", "Roseau", "Nassau", "Havana"],
     answer: "Roseau",
     explanation: "Roseau is the capital city of Dominica.",
   },
@@ -922,12 +922,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Caribbean has Roseau as its capital?",
-    choices: [
-      "Antigua and Barbuda",
-      "Bahamas",
-      "Dominica",
-      "Trinidad and Tobago",
-    ],
+    choices: ["Dominican Republic", "Grenada", "Dominica", "Jamaica"],
     answer: "Dominica",
     explanation:
       "Dominica is part of Caribbean, and Roseau is its capital city.",
@@ -940,8 +935,8 @@ export const generatedQuestionBank = [
     choices: [
       "Trinidad and Tobago",
       "Dominican Republic",
-      "Saint Lucia",
-      "Saint Vincent and the Grenadines",
+      "Dominica",
+      "Antigua and Barbuda",
     ],
     answer: "Dominican Republic",
     explanation: "Santo Domingo is the capital city of Dominican Republic.",
@@ -952,7 +947,12 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Caribbean borders only Haiti and has Santo Domingo as its capital?",
-    choices: ["Dominican Republic", "Grenada", "Haiti", "Jamaica"],
+    choices: [
+      "Dominican Republic",
+      "Dominica",
+      "Antigua and Barbuda",
+      "Trinidad and Tobago",
+    ],
     answer: "Dominican Republic",
     explanation:
       "Dominican Republic is in Caribbean, borders only Haiti, and has Santo Domingo as its capital.",
@@ -962,7 +962,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of DR Congo?",
-    choices: ["N'Djamena", "Kinshasa", "Yaoundé", "Bangui"],
+    choices: ["Yaoundé", "Kinshasa", "N'Djamena", "Luanda"],
     answer: "Kinshasa",
     explanation: "Kinshasa is the capital city of DR Congo.",
   },
@@ -972,7 +972,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Middle Africa borders Angola, Burundi, and Central African Republic?",
-    choices: ["Angola", "Cameroon", "DR Congo", "South Sudan"],
+    choices: ["Cameroon", "Gabon", "DR Congo", "South Sudan"],
     answer: "DR Congo",
     explanation:
       "DR Congo is in Middle Africa and borders Angola, Burundi, and Central African Republic.",
@@ -982,7 +982,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Quito is the capital of which country?",
-    choices: ["Ecuador", "Bolivia", "Brazil", "Chile"],
+    choices: ["Ecuador", "Bolivia", "Uruguay", "Brazil"],
     answer: "Ecuador",
     explanation: "Quito is the capital city of Ecuador.",
   },
@@ -991,7 +991,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in South America has Quito as its capital?",
-    choices: ["Peru", "Ecuador", "Guyana", "Paraguay"],
+    choices: ["Brazil", "Ecuador", "Bolivia", "Uruguay"],
     answer: "Ecuador",
     explanation:
       "Ecuador is part of South America, and Quito is its capital city.",
@@ -1001,7 +1001,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Egypt?",
-    choices: ["Cairo", "Rabat", "Khartoum", "Tunis"],
+    choices: ["Cairo", "Rabat", "Tunis", "Algiers"],
     answer: "Cairo",
     explanation: "Cairo is the capital city of Egypt.",
   },
@@ -1011,7 +1011,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Northern Africa borders Palestine, Sudan, and Israel?",
-    choices: ["Sudan", "Egypt", "Libya", "Morocco"],
+    choices: ["Morocco", "Egypt", "Libya", "Algeria"],
     answer: "Egypt",
     explanation:
       "Egypt is in Northern Africa and borders Palestine, Sudan, and Israel.",
@@ -1021,7 +1021,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "San Salvador is the capital of which country?",
-    choices: ["Panama", "El Salvador", "Honduras", "Nicaragua"],
+    choices: ["Nicaragua", "El Salvador", "Costa Rica", "Guatemala"],
     answer: "El Salvador",
     explanation: "San Salvador is the capital city of El Salvador.",
   },
@@ -1030,7 +1030,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Central America has San Salvador as its capital?",
-    choices: ["Belize", "Costa Rica", "El Salvador", "Panama"],
+    choices: ["Guatemala", "Nicaragua", "El Salvador", "Costa Rica"],
     answer: "El Salvador",
     explanation:
       "El Salvador is part of Central America, and San Salvador is its capital city.",
@@ -1040,7 +1040,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Equatorial Guinea?",
-    choices: ["Malabo", "Yaoundé", "Bangui", "N'Djamena"],
+    choices: ["Malabo", "Bangui", "Luanda", "Yaoundé"],
     answer: "Malabo",
     explanation: "Malabo is the capital city of Equatorial Guinea.",
   },
@@ -1050,10 +1050,10 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt: "Which country in Middle Africa has Malabo as its capital?",
     choices: [
-      "South Sudan",
-      "Equatorial Guinea",
-      "Republic of the Congo",
       "São Tomé and Príncipe",
+      "Equatorial Guinea",
+      "South Sudan",
+      "Republic of the Congo",
     ],
     answer: "Equatorial Guinea",
     explanation:
@@ -1064,7 +1064,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Asmara is the capital of which country?",
-    choices: ["Madagascar", "Malawi", "Eritrea", "Kenya"],
+    choices: ["Somalia", "Rwanda", "Eritrea", "Ethiopia"],
     answer: "Eritrea",
     explanation: "Asmara is the capital city of Eritrea.",
   },
@@ -1074,7 +1074,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Djibouti, Ethiopia, and Sudan?",
-    choices: ["Somalia", "Tanzania", "Uganda", "Eritrea"],
+    choices: ["Somalia", "Rwanda", "Tanzania", "Eritrea"],
     answer: "Eritrea",
     explanation:
       "Eritrea is in Eastern Africa and borders Djibouti, Ethiopia, and Sudan.",
@@ -1084,7 +1084,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Estonia?",
-    choices: ["Oslo", "Stockholm", "London", "Tallinn"],
+    choices: ["Dublin", "London", "Vilnius", "Tallinn"],
     answer: "Tallinn",
     explanation: "Tallinn is the capital city of Estonia.",
   },
@@ -1093,7 +1093,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Northern Europe has Tallinn as its capital?",
-    choices: ["Estonia", "Iceland", "Ireland", "Latvia"],
+    choices: ["Estonia", "Lithuania", "Latvia", "Denmark"],
     answer: "Estonia",
     explanation:
       "Estonia is part of Northern Europe, and Tallinn is its capital city.",
@@ -1103,7 +1103,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Lobamba is the capital of which country?",
-    choices: ["South Africa", "Botswana", "Lesotho", "Eswatini"],
+    choices: ["Botswana", "Lesotho", "Namibia", "Eswatini"],
     answer: "Eswatini",
     explanation: "Lobamba is the capital city of Eswatini.",
   },
@@ -1113,7 +1113,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which landlocked country in Southern Africa has Lobamba as its capital?",
-    choices: ["South Africa", "Botswana", "Lesotho", "Eswatini"],
+    choices: ["Botswana", "Lesotho", "Namibia", "Eswatini"],
     answer: "Eswatini",
     explanation:
       "Eswatini is a landlocked country in Southern Africa, and its capital is Lobamba.",
@@ -1123,7 +1123,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Ethiopia?",
-    choices: ["Port Louis", "Addis Ababa", "Antananarivo", "Lilongwe"],
+    choices: ["Port Louis", "Addis Ababa", "Antananarivo", "Asmara"],
     answer: "Addis Ababa",
     explanation: "Addis Ababa is the capital city of Ethiopia.",
   },
@@ -1133,7 +1133,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Sudan, Djibouti, and Eritrea?",
-    choices: ["Uganda", "Zambia", "Ethiopia", "Tanzania"],
+    choices: ["Somalia", "Zambia", "Ethiopia", "Tanzania"],
     answer: "Ethiopia",
     explanation:
       "Ethiopia is in Eastern Africa and borders Sudan, Djibouti, and Eritrea.",
@@ -1143,7 +1143,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Suva is the capital of which country?",
-    choices: ["Vanuatu", "Fiji", "Papua New Guinea", "Solomon Islands"],
+    choices: ["Papua New Guinea", "Fiji", "Vanuatu", "Solomon Islands"],
     answer: "Fiji",
     explanation: "Suva is the capital city of Fiji.",
   },
@@ -1152,7 +1152,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Melanesia has Suva as its capital?",
-    choices: ["Papua New Guinea", "Solomon Islands", "Fiji", "Vanuatu"],
+    choices: ["Solomon Islands", "Papua New Guinea", "Fiji", "Vanuatu"],
     answer: "Fiji",
     explanation: "Fiji is part of Melanesia, and Suva is its capital city.",
   },
@@ -1161,7 +1161,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Finland?",
-    choices: ["Helsinki", "London", "Copenhagen", "Tallinn"],
+    choices: ["Helsinki", "Reykjavik", "Stockholm", "Tallinn"],
     answer: "Helsinki",
     explanation: "Helsinki is the capital city of Finland.",
   },
@@ -1171,7 +1171,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Northern Europe borders Sweden, Russia, and Norway?",
-    choices: ["United Kingdom", "Finland", "Norway", "Sweden"],
+    choices: ["Denmark", "Finland", "Iceland", "Ireland"],
     answer: "Finland",
     explanation:
       "Finland is in Northern Europe and borders Sweden, Russia, and Norway.",
@@ -1181,7 +1181,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Paris is the capital of which country?",
-    choices: ["Monaco", "France", "Liechtenstein", "Luxembourg"],
+    choices: ["Germany", "France", "Monaco", "Belgium"],
     answer: "France",
     explanation: "Paris is the capital city of France.",
   },
@@ -1191,7 +1191,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Europe borders Monaco, Spain, and Switzerland?",
-    choices: ["Liechtenstein", "Luxembourg", "France", "Germany"],
+    choices: ["Germany", "Luxembourg", "France", "Belgium"],
     answer: "France",
     explanation:
       "France is in Western Europe and borders Monaco, Spain, and Switzerland.",
@@ -1201,7 +1201,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Gabon?",
-    choices: ["Kinshasa", "Malabo", "Brazzaville", "Libreville"],
+    choices: ["Brazzaville", "Luanda", "N'Djamena", "Libreville"],
     answer: "Libreville",
     explanation: "Libreville is the capital city of Gabon.",
   },
@@ -1211,7 +1211,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Middle Africa borders Cameroon, Republic of the Congo, and Equatorial Guinea?",
-    choices: ["Gabon", "Central African Republic", "Chad", "DR Congo"],
+    choices: ["Gabon", "Angola", "Chad", "DR Congo"],
     answer: "Gabon",
     explanation:
       "Gabon is in Middle Africa and borders Cameroon, Republic of the Congo, and Equatorial Guinea.",
@@ -1221,7 +1221,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Banjul is the capital of which country?",
-    choices: ["Liberia", "Mali", "Mauritania", "Gambia"],
+    choices: ["Guinea", "Ghana", "Guinea-Bissau", "Gambia"],
     answer: "Gambia",
     explanation: "Banjul is the capital city of Gambia.",
   },
@@ -1231,7 +1231,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders only Senegal and has Banjul as its capital?",
-    choices: ["Liberia", "Mali", "Gambia", "Ivory Coast"],
+    choices: ["Ghana", "Guinea-Bissau", "Gambia", "Guinea"],
     answer: "Gambia",
     explanation:
       "Gambia is in Western Africa, borders only Senegal, and has Banjul as its capital.",
@@ -1241,7 +1241,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Georgia?",
-    choices: ["Tbilisi", "Abu Dhabi", "Sana'a", "Yerevan"],
+    choices: ["Tbilisi", "Baghdad", "Yerevan", "Ankara"],
     answer: "Tbilisi",
     explanation: "Tbilisi is the capital city of Georgia.",
   },
@@ -1251,7 +1251,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Asia borders Russia, Türkiye, and Armenia?",
-    choices: ["Lebanon", "Georgia", "Jordan", "Kuwait"],
+    choices: ["Lebanon", "Georgia", "Syria", "Bahrain"],
     answer: "Georgia",
     explanation:
       "Georgia is in Western Asia and borders Russia, Türkiye, and Armenia.",
@@ -1261,7 +1261,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Berlin is the capital of which country?",
-    choices: ["Monaco", "Germany", "Liechtenstein", "Luxembourg"],
+    choices: ["Monaco", "Germany", "Belgium", "France"],
     answer: "Germany",
     explanation: "Berlin is the capital city of Germany.",
   },
@@ -1271,7 +1271,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Europe borders Poland, Switzerland, and Austria?",
-    choices: ["Liechtenstein", "Luxembourg", "Germany", "France"],
+    choices: ["France", "Monaco", "Germany", "Belgium"],
     answer: "Germany",
     explanation:
       "Germany is in Western Europe and borders Poland, Switzerland, and Austria.",
@@ -1281,7 +1281,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Ghana?",
-    choices: ["Accra", "Banjul", "Conakry", "Bissau"],
+    choices: ["Accra", "Abuja", "Praia", "Dakar"],
     answer: "Accra",
     explanation: "Accra is the capital city of Ghana.",
   },
@@ -1291,7 +1291,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Togo, Burkina Faso, and Ivory Coast?",
-    choices: ["Mauritania", "Ghana", "Liberia", "Mali"],
+    choices: ["Guinea-Bissau", "Ghana", "Gambia", "Guinea"],
     answer: "Ghana",
     explanation:
       "Ghana is in Western Africa and borders Togo, Burkina Faso, and Ivory Coast.",
@@ -1301,7 +1301,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Athens is the capital of which country?",
-    choices: ["San Marino", "Spain", "Greece", "Portugal"],
+    choices: ["Andorra", "Italy", "Greece", "Cyprus"],
     answer: "Greece",
     explanation: "Athens is the capital city of Greece.",
   },
@@ -1311,7 +1311,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Europe borders Albania, Bulgaria, and Türkiye?",
-    choices: ["Malta", "Portugal", "San Marino", "Greece"],
+    choices: ["Cyprus", "Andorra", "Italy", "Greece"],
     answer: "Greece",
     explanation:
       "Greece is in Southern Europe and borders Albania, Bulgaria, and Türkiye.",
@@ -1321,7 +1321,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Grenada?",
-    choices: ["Havana", "Roseau", "Santo Domingo", "St. George's"],
+    choices: ["Saint John's", "Santo Domingo", "Port of Spain", "St. George's"],
     answer: "St. George's",
     explanation: "St. George's is the capital city of Grenada.",
   },
@@ -1330,7 +1330,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Caribbean has St. George's as its capital?",
-    choices: ["Grenada", "Dominican Republic", "Haiti", "Jamaica"],
+    choices: ["Grenada", "Jamaica", "Dominica", "Bahamas"],
     answer: "Grenada",
     explanation:
       "Grenada is part of Caribbean, and St. George's is its capital city.",
@@ -1340,7 +1340,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Guatemala City is the capital of which country?",
-    choices: ["Guatemala", "Belize", "Costa Rica", "El Salvador"],
+    choices: ["Guatemala", "Nicaragua", "Honduras", "Panama"],
     answer: "Guatemala",
     explanation: "Guatemala City is the capital city of Guatemala.",
   },
@@ -1350,7 +1350,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central America borders Honduras, Mexico, and Belize?",
-    choices: ["Honduras", "Guatemala", "Costa Rica", "El Salvador"],
+    choices: ["Costa Rica", "Guatemala", "Nicaragua", "Panama"],
     answer: "Guatemala",
     explanation:
       "Guatemala is in Central America and borders Honduras, Mexico, and Belize.",
@@ -1360,7 +1360,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Guinea?",
-    choices: ["Freetown", "Lomé", "Porto-Novo", "Conakry"],
+    choices: ["Niamey", "Bamako", "Banjul", "Conakry"],
     answer: "Conakry",
     explanation: "Conakry is the capital city of Guinea.",
   },
@@ -1370,7 +1370,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Mali, Senegal, and Sierra Leone?",
-    choices: ["Guinea", "Cape Verde", "Gambia", "Ghana"],
+    choices: ["Guinea", "Gambia", "Ghana", "Guinea-Bissau"],
     answer: "Guinea",
     explanation:
       "Guinea is in Western Africa and borders Mali, Senegal, and Sierra Leone.",
@@ -1380,7 +1380,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Bissau is the capital of which country?",
-    choices: ["Senegal", "Guinea-Bissau", "Niger", "Nigeria"],
+    choices: ["Ghana", "Guinea-Bissau", "Guinea", "Gambia"],
     answer: "Guinea-Bissau",
     explanation: "Bissau is the capital city of Guinea-Bissau.",
   },
@@ -1389,7 +1389,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Africa has Bissau as its capital?",
-    choices: ["Sierra Leone", "Togo", "Guinea-Bissau", "Senegal"],
+    choices: ["Gambia", "Ghana", "Guinea-Bissau", "Guinea"],
     answer: "Guinea-Bissau",
     explanation:
       "Guinea-Bissau is part of Western Africa, and Bissau is its capital city.",
@@ -1399,7 +1399,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Guyana?",
-    choices: ["Lima", "Paramaribo", "Georgetown", "Asunción"],
+    choices: ["Montevideo", "Paramaribo", "Georgetown", "Asunción"],
     answer: "Georgetown",
     explanation: "Georgetown is the capital city of Guyana.",
   },
@@ -1409,7 +1409,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South America borders Venezuela, Brazil, and Suriname?",
-    choices: ["Peru", "Suriname", "Uruguay", "Guyana"],
+    choices: ["Argentina", "Bolivia", "Colombia", "Guyana"],
     answer: "Guyana",
     explanation:
       "Guyana is in South America and borders Venezuela, Brazil, and Suriname.",
@@ -1419,7 +1419,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Port-au-Prince is the capital of which country?",
-    choices: ["Jamaica", "Saint Kitts and Nevis", "Saint Lucia", "Haiti"],
+    choices: ["Cuba", "Bahamas", "Grenada", "Haiti"],
     answer: "Haiti",
     explanation: "Port-au-Prince is the capital city of Haiti.",
   },
@@ -1429,7 +1429,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Caribbean borders only Dominican Republic and has Port-au-Prince as its capital?",
-    choices: ["Dominica", "Dominican Republic", "Haiti", "Cuba"],
+    choices: ["Bahamas", "Grenada", "Haiti", "Cuba"],
     answer: "Haiti",
     explanation:
       "Haiti is in Caribbean, borders only Dominican Republic, and has Port-au-Prince as its capital.",
@@ -1439,7 +1439,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Honduras?",
-    choices: ["Guatemala City", "Managua", "Tegucigalpa", "San Salvador"],
+    choices: ["Belmopan", "Panama City", "Tegucigalpa", "Managua"],
     answer: "Tegucigalpa",
     explanation: "Tegucigalpa is the capital city of Honduras.",
   },
@@ -1449,7 +1449,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central America borders El Salvador, Nicaragua, and Guatemala?",
-    choices: ["Guatemala", "Nicaragua", "Panama", "Honduras"],
+    choices: ["Belize", "Panama", "Costa Rica", "Honduras"],
     answer: "Honduras",
     explanation:
       "Honduras is in Central America and borders El Salvador, Nicaragua, and Guatemala.",
@@ -1459,7 +1459,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Budapest is the capital of which country?",
-    choices: ["Poland", "Slovakia", "Hungary", "Czechia"],
+    choices: ["Czechia", "Poland", "Hungary", "Austria"],
     answer: "Hungary",
     explanation: "Budapest is the capital city of Hungary.",
   },
@@ -1469,7 +1469,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central Europe borders Slovenia, Ukraine, and Austria?",
-    choices: ["Austria", "Czechia", "Poland", "Hungary"],
+    choices: ["Czechia", "Poland", "Slovakia", "Hungary"],
     answer: "Hungary",
     explanation:
       "Hungary is in Central Europe and borders Slovenia, Ukraine, and Austria.",
@@ -1479,7 +1479,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Iceland?",
-    choices: ["Dublin", "Riga", "Vilnius", "Reykjavik"],
+    choices: ["Riga", "Stockholm", "Copenhagen", "Reykjavik"],
     answer: "Reykjavik",
     explanation: "Reykjavik is the capital city of Iceland.",
   },
@@ -1488,7 +1488,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Northern Europe has Reykjavik as its capital?",
-    choices: ["Iceland", "United Kingdom", "Denmark", "Estonia"],
+    choices: ["Iceland", "Ireland", "Finland", "Denmark"],
     answer: "Iceland",
     explanation:
       "Iceland is part of Northern Europe, and Reykjavik is its capital city.",
@@ -1498,7 +1498,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "New Delhi is the capital of which country?",
-    choices: ["Iran", "India", "Bangladesh", "Bhutan"],
+    choices: ["Bhutan", "India", "Iran", "Nepal"],
     answer: "India",
     explanation: "New Delhi is the capital city of India.",
   },
@@ -1508,7 +1508,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Asia borders China, Nepal, and Pakistan?",
-    choices: ["Bangladesh", "Bhutan", "India", "Afghanistan"],
+    choices: ["Bhutan", "Maldives", "India", "Iran"],
     answer: "India",
     explanation:
       "India is in Southern Asia and borders China, Nepal, and Pakistan.",
@@ -1518,7 +1518,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Indonesia?",
-    choices: ["Bangkok", "Dili", "Hanoi", "Jakarta"],
+    choices: ["Manila", "Bangkok", "Hanoi", "Jakarta"],
     answer: "Jakarta",
     explanation: "Jakarta is the capital city of Indonesia.",
   },
@@ -1528,7 +1528,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South-Eastern Asia borders Malaysia, Papua New Guinea, and Timor-Leste?",
-    choices: ["Indonesia", "Singapore", "Thailand", "Timor-Leste"],
+    choices: ["Indonesia", "Cambodia", "Singapore", "Thailand"],
     answer: "Indonesia",
     explanation:
       "Indonesia is in South-Eastern Asia and borders Malaysia, Papua New Guinea, and Timor-Leste.",
@@ -1538,7 +1538,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Tehran is the capital of which country?",
-    choices: ["Sri Lanka", "Afghanistan", "Bangladesh", "Iran"],
+    choices: ["India", "Bhutan", "Pakistan", "Iran"],
     answer: "Iran",
     explanation: "Tehran is the capital city of Iran.",
   },
@@ -1548,7 +1548,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Asia borders Iraq, Pakistan, and Türkiye?",
-    choices: ["Iran", "Pakistan", "Sri Lanka", "Afghanistan"],
+    choices: ["Iran", "India", "Bhutan", "Nepal"],
     answer: "Iran",
     explanation:
       "Iran is in Southern Asia and borders Iraq, Pakistan, and Türkiye.",
@@ -1558,7 +1558,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Iraq?",
-    choices: ["Baku", "Manama", "Baghdad", "Yerevan"],
+    choices: ["Beirut", "Tbilisi", "Baghdad", "Baku"],
     answer: "Baghdad",
     explanation: "Baghdad is the capital city of Iraq.",
   },
@@ -1567,7 +1567,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia borders Syria, Türkiye, and Iran?",
-    choices: ["Lebanon", "Oman", "Palestine", "Iraq"],
+    choices: ["Israel", "Oman", "Qatar", "Iraq"],
     answer: "Iraq",
     explanation:
       "Iraq is in Western Asia and borders Syria, Türkiye, and Iran.",
@@ -1577,7 +1577,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Dublin is the capital of which country?",
-    choices: ["Lithuania", "Ireland", "Iceland", "Latvia"],
+    choices: ["Denmark", "Ireland", "Iceland", "Finland"],
     answer: "Ireland",
     explanation: "Dublin is the capital city of Ireland.",
   },
@@ -1587,7 +1587,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Northern Europe borders only United Kingdom and has Dublin as its capital?",
-    choices: ["Ireland", "Lithuania", "Norway", "Sweden"],
+    choices: ["Ireland", "Iceland", "Finland", "Denmark"],
     answer: "Ireland",
     explanation:
       "Ireland is in Northern Europe, borders only United Kingdom, and has Dublin as its capital.",
@@ -1597,7 +1597,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Israel?",
-    choices: ["Beirut", "Jerusalem", "Amman", "Kuwait City"],
+    choices: ["Baghdad", "Jerusalem", "Damascus", "Ramallah"],
     answer: "Jerusalem",
     explanation: "Jerusalem is the capital city of Israel.",
   },
@@ -1606,7 +1606,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia borders Syria, Egypt, and Jordan?",
-    choices: ["Türkiye", "United Arab Emirates", "Israel", "Syria"],
+    choices: ["Kuwait", "Armenia", "Israel", "Iraq"],
     answer: "Israel",
     explanation:
       "Israel is in Western Asia and borders Syria, Egypt, and Jordan.",
@@ -1616,7 +1616,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Rome is the capital of which country?",
-    choices: ["San Marino", "Spain", "Italy", "Portugal"],
+    choices: ["Spain", "Cyprus", "Italy", "Malta"],
     answer: "Italy",
     explanation: "Rome is the capital city of Italy.",
   },
@@ -1626,7 +1626,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Europe borders Austria, France, and San Marino?",
-    choices: ["Malta", "Portugal", "San Marino", "Italy"],
+    choices: ["Malta", "Spain", "Cyprus", "Italy"],
     answer: "Italy",
     explanation:
       "Italy is in Southern Europe and borders Austria, France, and San Marino.",
@@ -1636,7 +1636,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Ivory Coast?",
-    choices: ["Monrovia", "Bamako", "Nouakchott", "Yamoussoukro"],
+    choices: ["Porto-Novo", "Ouagadougou", "Nouakchott", "Yamoussoukro"],
     answer: "Yamoussoukro",
     explanation: "Yamoussoukro is the capital city of Ivory Coast.",
   },
@@ -1646,7 +1646,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Liberia, Mali, and Burkina Faso?",
-    choices: ["Ivory Coast", "Nigeria", "Senegal", "Sierra Leone"],
+    choices: ["Ivory Coast", "Cape Verde", "Sierra Leone", "Mauritania"],
     answer: "Ivory Coast",
     explanation:
       "Ivory Coast is in Western Africa and borders Liberia, Mali, and Burkina Faso.",
@@ -1656,7 +1656,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Kingston is the capital of which country?",
-    choices: ["Cuba", "Dominica", "Dominican Republic", "Jamaica"],
+    choices: ["Dominica", "Grenada", "Bahamas", "Jamaica"],
     answer: "Jamaica",
     explanation: "Kingston is the capital city of Jamaica.",
   },
@@ -1665,7 +1665,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Caribbean has Kingston as its capital?",
-    choices: ["Jamaica", "Dominican Republic", "Grenada", "Haiti"],
+    choices: ["Jamaica", "Dominica", "Grenada", "Bahamas"],
     answer: "Jamaica",
     explanation:
       "Jamaica is part of Caribbean, and Kingston is its capital city.",
@@ -1675,7 +1675,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Japan?",
-    choices: ["Ulan Bator", "Pyongyang", "Tokyo", "Beijing"],
+    choices: ["Beijing", "Pyongyang", "Tokyo", "Seoul"],
     answer: "Tokyo",
     explanation: "Tokyo is the capital city of Japan.",
   },
@@ -1684,7 +1684,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Eastern Asia has Tokyo as its capital?",
-    choices: ["North Korea", "South Korea", "China", "Japan"],
+    choices: ["China", "Mongolia", "North Korea", "Japan"],
     answer: "Japan",
     explanation:
       "Japan is part of Eastern Asia, and Tokyo is its capital city.",
@@ -1694,7 +1694,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Amman is the capital of which country?",
-    choices: ["Jordan", "United Arab Emirates", "Yemen", "Armenia"],
+    choices: ["Jordan", "Oman", "Bahrain", "Lebanon"],
     answer: "Jordan",
     explanation: "Amman is the capital city of Jordan.",
   },
@@ -1703,7 +1703,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia borders Syria, Iraq, and Israel?",
-    choices: ["Lebanon", "Jordan", "Israel", "Kuwait"],
+    choices: ["Lebanon", "Jordan", "Oman", "Bahrain"],
     answer: "Jordan",
     explanation:
       "Jordan is in Western Asia and borders Syria, Iraq, and Israel.",
@@ -1713,7 +1713,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Kazakhstan?",
-    choices: ["Tashkent", "Bishkek", "Dushanbe", "Astana"],
+    choices: ["Ashgabat", "Bishkek", "Dushanbe", "Astana"],
     answer: "Astana",
     explanation: "Astana is the capital city of Kazakhstan.",
   },
@@ -1723,7 +1723,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central Asia borders Kyrgyzstan, Russia, and Turkmenistan?",
-    choices: ["Kazakhstan", "Turkmenistan", "Uzbekistan", "Kyrgyzstan"],
+    choices: ["Kazakhstan", "Tajikistan", "Uzbekistan", "Kyrgyzstan"],
     answer: "Kazakhstan",
     explanation:
       "Kazakhstan is in Central Asia and borders Kyrgyzstan, Russia, and Turkmenistan.",
@@ -1733,7 +1733,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Nairobi is the capital of which country?",
-    choices: ["Zimbabwe", "Burundi", "Comoros", "Kenya"],
+    choices: ["Rwanda", "Uganda", "Zambia", "Kenya"],
     answer: "Kenya",
     explanation: "Nairobi is the capital city of Kenya.",
   },
@@ -1743,7 +1743,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Ethiopia, Somalia, and South Sudan?",
-    choices: ["Kenya", "Malawi", "Mauritius", "Mozambique"],
+    choices: ["Kenya", "Rwanda", "Uganda", "Zambia"],
     answer: "Kenya",
     explanation:
       "Kenya is in Eastern Africa and borders Ethiopia, Somalia, and South Sudan.",
@@ -1753,7 +1753,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Kiribati?",
-    choices: ["Ngerulmud", "Majuro", "Palikir", "South Tarawa"],
+    choices: ["Ngerulmud", "Palikir", "Majuro", "South Tarawa"],
     answer: "South Tarawa",
     explanation: "South Tarawa is the capital city of Kiribati.",
   },
@@ -1772,7 +1772,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Kuwait City is the capital of which country?",
-    choices: ["Lebanon", "Kuwait", "Israel", "Jordan"],
+    choices: ["Armenia", "Kuwait", "Israel", "Jordan"],
     answer: "Kuwait",
     explanation: "Kuwait City is the capital city of Kuwait.",
   },
@@ -1781,7 +1781,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia has Kuwait City as its capital?",
-    choices: ["Iraq", "Israel", "Kuwait", "Georgia"],
+    choices: ["Jordan", "Armenia", "Kuwait", "Israel"],
     answer: "Kuwait",
     explanation:
       "Kuwait is part of Western Asia, and Kuwait City is its capital city.",
@@ -1791,7 +1791,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Kyrgyzstan?",
-    choices: ["Tashkent", "Astana", "Dushanbe", "Bishkek"],
+    choices: ["Ashgabat", "Astana", "Dushanbe", "Bishkek"],
     answer: "Bishkek",
     explanation: "Bishkek is the capital city of Kyrgyzstan.",
   },
@@ -1801,7 +1801,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central Asia borders Uzbekistan, China, and Kazakhstan?",
-    choices: ["Kyrgyzstan", "Turkmenistan", "Uzbekistan", "Kazakhstan"],
+    choices: ["Kyrgyzstan", "Tajikistan", "Turkmenistan", "Kazakhstan"],
     answer: "Kyrgyzstan",
     explanation:
       "Kyrgyzstan is in Central Asia and borders Uzbekistan, China, and Kazakhstan.",
@@ -1811,7 +1811,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Vientiane is the capital of which country?",
-    choices: ["Malaysia", "Myanmar", "Philippines", "Laos"],
+    choices: ["Brunei", "Myanmar", "Vietnam", "Laos"],
     answer: "Laos",
     explanation: "Vientiane is the capital city of Laos.",
   },
@@ -1821,7 +1821,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South-Eastern Asia borders Vietnam, Myanmar, and Cambodia?",
-    choices: ["Laos", "Indonesia", "Malaysia", "Myanmar"],
+    choices: ["Laos", "Brunei", "Malaysia", "Thailand"],
     answer: "Laos",
     explanation:
       "Laos is in South-Eastern Asia and borders Vietnam, Myanmar, and Cambodia.",
@@ -1831,7 +1831,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Latvia?",
-    choices: ["Stockholm", "London", "Copenhagen", "Riga"],
+    choices: ["Reykjavik", "Oslo", "Dublin", "Riga"],
     answer: "Riga",
     explanation: "Riga is the capital city of Latvia.",
   },
@@ -1851,7 +1851,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Beirut is the capital of which country?",
-    choices: ["Lebanon", "Qatar", "Saudi Arabia", "Syria"],
+    choices: ["Lebanon", "Bahrain", "Jordan", "Armenia"],
     answer: "Lebanon",
     explanation: "Beirut is the capital city of Lebanon.",
   },
@@ -1860,7 +1860,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia has Beirut as its capital?",
-    choices: ["Qatar", "Lebanon", "Oman", "Palestine"],
+    choices: ["Armenia", "Lebanon", "Bahrain", "Jordan"],
     answer: "Lebanon",
     explanation:
       "Lebanon is part of Western Asia, and Beirut is its capital city.",
@@ -1870,7 +1870,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Lesotho?",
-    choices: ["Pretoria", "Gaborone", "Lobamba", "Maseru"],
+    choices: ["Lobamba", "Gaborone", "Pretoria", "Maseru"],
     answer: "Maseru",
     explanation: "Maseru is the capital city of Lesotho.",
   },
@@ -1880,7 +1880,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which landlocked country in Southern Africa has Maseru as its capital?",
-    choices: ["South Africa", "Botswana", "Eswatini", "Lesotho"],
+    choices: ["Namibia", "Botswana", "Eswatini", "Lesotho"],
     answer: "Lesotho",
     explanation:
       "Lesotho is a landlocked country in Southern Africa, and its capital is Maseru.",
@@ -1890,7 +1890,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Monrovia is the capital of which country?",
-    choices: ["Liberia", "Gambia", "Ghana", "Guinea"],
+    choices: ["Liberia", "Nigeria", "Gambia", "Guinea"],
     answer: "Liberia",
     explanation: "Monrovia is the capital city of Liberia.",
   },
@@ -1900,7 +1900,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Sierra Leone, Guinea, and Ivory Coast?",
-    choices: ["Mauritania", "Liberia", "Ivory Coast", "Mali"],
+    choices: ["Mauritania", "Liberia", "Nigeria", "Gambia"],
     answer: "Liberia",
     explanation:
       "Liberia is in Western Africa and borders Sierra Leone, Guinea, and Ivory Coast.",
@@ -1910,7 +1910,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Libya?",
-    choices: ["Cairo", "Rabat", "Khartoum", "Tripoli"],
+    choices: ["Tunis", "Algiers", "Khartoum", "Tripoli"],
     answer: "Tripoli",
     explanation: "Tripoli is the capital city of Libya.",
   },
@@ -1930,7 +1930,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Vaduz is the capital of which country?",
-    choices: ["Switzerland", "Liechtenstein", "Monaco", "Netherlands"],
+    choices: ["Switzerland", "Liechtenstein", "Luxembourg", "Netherlands"],
     answer: "Liechtenstein",
     explanation: "Vaduz is the capital city of Liechtenstein.",
   },
@@ -1940,7 +1940,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which landlocked country in Western Europe has Vaduz as its capital?",
-    choices: ["Belgium", "Liechtenstein", "Monaco", "Netherlands"],
+    choices: ["Germany", "Liechtenstein", "Belgium", "France"],
     answer: "Liechtenstein",
     explanation:
       "Liechtenstein is a landlocked country in Western Europe, and its capital is Vaduz.",
@@ -1950,7 +1950,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Lithuania?",
-    choices: ["Copenhagen", "Tallinn", "Helsinki", "Vilnius"],
+    choices: ["Tallinn", "Dublin", "Helsinki", "Vilnius"],
     answer: "Vilnius",
     explanation: "Vilnius is the capital city of Lithuania.",
   },
@@ -1960,7 +1960,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Northern Europe borders Russia, Belarus, and Latvia?",
-    choices: ["Lithuania", "Sweden", "United Kingdom", "Denmark"],
+    choices: ["Lithuania", "Estonia", "Denmark", "Finland"],
     answer: "Lithuania",
     explanation:
       "Lithuania is in Northern Europe and borders Russia, Belarus, and Latvia.",
@@ -1970,7 +1970,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Luxembourg is the capital of which country?",
-    choices: ["Luxembourg", "Belgium", "France", "Germany"],
+    choices: ["Luxembourg", "Liechtenstein", "Netherlands", "Switzerland"],
     answer: "Luxembourg",
     explanation: "Luxembourg is the capital city of Luxembourg.",
   },
@@ -1980,7 +1980,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Europe borders Germany, Belgium, and France?",
-    choices: ["France", "Luxembourg", "Switzerland", "Belgium"],
+    choices: ["Switzerland", "Luxembourg", "Liechtenstein", "Netherlands"],
     answer: "Luxembourg",
     explanation:
       "Luxembourg is in Western Europe and borders Germany, Belgium, and France.",
@@ -1990,7 +1990,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Madagascar?",
-    choices: ["Antananarivo", "Victoria", "Mogadishu", "Dodoma"],
+    choices: ["Antananarivo", "Addis Ababa", "Asmara", "Mogadishu"],
     answer: "Antananarivo",
     explanation: "Antananarivo is the capital city of Madagascar.",
   },
@@ -1999,7 +1999,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Eastern Africa has Antananarivo as its capital?",
-    choices: ["Seychelles", "Madagascar", "Mozambique", "Rwanda"],
+    choices: ["Malawi", "Madagascar", "Mauritius", "Mozambique"],
     answer: "Madagascar",
     explanation:
       "Madagascar is part of Eastern Africa, and Antananarivo is its capital city.",
@@ -2009,7 +2009,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Lilongwe is the capital of which country?",
-    choices: ["Malawi", "Madagascar", "Mauritius", "Mozambique"],
+    choices: ["Malawi", "Mauritius", "Madagascar", "Mozambique"],
     answer: "Malawi",
     explanation: "Lilongwe is the capital city of Malawi.",
   },
@@ -2019,7 +2019,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Tanzania, Zambia, and Mozambique?",
-    choices: ["Zimbabwe", "Malawi", "Uganda", "Zambia"],
+    choices: ["Burundi", "Malawi", "Mauritius", "Madagascar"],
     answer: "Malawi",
     explanation:
       "Malawi is in Eastern Africa and borders Tanzania, Zambia, and Mozambique.",
@@ -2029,7 +2029,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Malaysia?",
-    choices: ["Hanoi", "Bandar Seri Begawan", "Kuala Lumpur", "Dili"],
+    choices: ["Naypyidaw", "Singapore", "Kuala Lumpur", "Phnom Penh"],
     answer: "Kuala Lumpur",
     explanation: "Kuala Lumpur is the capital city of Malaysia.",
   },
@@ -2039,7 +2039,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South-Eastern Asia borders Thailand, Brunei, and Indonesia?",
-    choices: ["Thailand", "Timor-Leste", "Vietnam", "Malaysia"],
+    choices: ["Myanmar", "Cambodia", "Singapore", "Malaysia"],
     answer: "Malaysia",
     explanation:
       "Malaysia is in South-Eastern Asia and borders Thailand, Brunei, and Indonesia.",
@@ -2049,7 +2049,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Malé is the capital of which country?",
-    choices: ["Sri Lanka", "Afghanistan", "Bangladesh", "Maldives"],
+    choices: ["Pakistan", "Bangladesh", "Bhutan", "Maldives"],
     answer: "Maldives",
     explanation: "Malé is the capital city of Maldives.",
   },
@@ -2058,7 +2058,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Southern Asia has Malé as its capital?",
-    choices: ["Maldives", "Nepal", "Pakistan", "Sri Lanka"],
+    choices: ["Maldives", "Pakistan", "Bangladesh", "Bhutan"],
     answer: "Maldives",
     explanation:
       "Maldives is part of Southern Asia, and Malé is its capital city.",
@@ -2068,7 +2068,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Mali?",
-    choices: ["Porto-Novo", "Ouagadougou", "Bamako", "Lomé"],
+    choices: ["Bissau", "Niamey", "Bamako", "Banjul"],
     answer: "Bamako",
     explanation: "Bamako is the capital city of Mali.",
   },
@@ -2078,7 +2078,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Burkina Faso, Guinea, and Ivory Coast?",
-    choices: ["Gambia", "Ghana", "Guinea", "Mali"],
+    choices: ["Mauritania", "Togo", "Benin", "Mali"],
     answer: "Mali",
     explanation:
       "Mali is in Western Africa and borders Burkina Faso, Guinea, and Ivory Coast.",
@@ -2088,7 +2088,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Valletta is the capital of which country?",
-    choices: ["Italy", "Malta", "Cyprus", "Greece"],
+    choices: ["Spain", "Malta", "Andorra", "Italy"],
     answer: "Malta",
     explanation: "Valletta is the capital city of Malta.",
   },
@@ -2097,7 +2097,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Southern Europe has Valletta as its capital?",
-    choices: ["Andorra", "Cyprus", "Malta", "Vatican City"],
+    choices: ["Italy", "Spain", "Malta", "Andorra"],
     answer: "Malta",
     explanation:
       "Malta is part of Southern Europe, and Valletta is its capital city.",
@@ -2116,7 +2116,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Micronesia has Majuro as its capital?",
-    choices: ["Kiribati", "Micronesia", "Marshall Islands", "Palau"],
+    choices: ["Kiribati", "Nauru", "Marshall Islands", "Micronesia"],
     answer: "Marshall Islands",
     explanation:
       "Marshall Islands is part of Micronesia, and Majuro is its capital city.",
@@ -2126,7 +2126,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Nouakchott is the capital of which country?",
-    choices: ["Gambia", "Mauritania", "Burkina Faso", "Cape Verde"],
+    choices: ["Nigeria", "Mauritania", "Mali", "Liberia"],
     answer: "Mauritania",
     explanation: "Nouakchott is the capital city of Mauritania.",
   },
@@ -2136,7 +2136,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Algeria, Mali, and Senegal?",
-    choices: ["Guinea-Bissau", "Ivory Coast", "Mauritania", "Guinea"],
+    choices: ["Nigeria", "Gambia", "Mauritania", "Liberia"],
     answer: "Mauritania",
     explanation:
       "Mauritania is in Western Africa and borders Algeria, Mali, and Senegal.",
@@ -2146,7 +2146,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Mauritius?",
-    choices: ["Moroni", "Djibouti", "Port Louis", "Gitega"],
+    choices: ["Mogadishu", "Antananarivo", "Port Louis", "Addis Ababa"],
     answer: "Port Louis",
     explanation: "Port Louis is the capital city of Mauritius.",
   },
@@ -2155,7 +2155,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Eastern Africa has Port Louis as its capital?",
-    choices: ["Zambia", "Zimbabwe", "Burundi", "Mauritius"],
+    choices: ["Madagascar", "Malawi", "Mozambique", "Mauritius"],
     answer: "Mauritius",
     explanation:
       "Mauritius is part of Eastern Africa, and Port Louis is its capital city.",
@@ -2165,7 +2165,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Mexico City is the capital of which country?",
-    choices: ["Canada", "Mexico", "United States"],
+    choices: ["United States", "Mexico", "Canada"],
     answer: "Mexico",
     explanation: "Mexico City is the capital city of Mexico.",
   },
@@ -2185,7 +2185,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Micronesia?",
-    choices: ["Ngerulmud", "South Tarawa", "Majuro", "Palikir"],
+    choices: ["Majuro", "Ngerulmud", "Yaren", "Palikir"],
     answer: "Palikir",
     explanation: "Palikir is the capital city of Micronesia.",
   },
@@ -2194,7 +2194,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Micronesia has Palikir as its capital?",
-    choices: ["Micronesia", "Marshall Islands", "Nauru", "Palau"],
+    choices: ["Micronesia", "Marshall Islands", "Kiribati", "Nauru"],
     answer: "Micronesia",
     explanation:
       "Micronesia is part of Micronesia, and Palikir is its capital city.",
@@ -2204,7 +2204,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Chișinău is the capital of which country?",
-    choices: ["Russia", "Ukraine", "Moldova", "Belarus"],
+    choices: ["Belarus", "Ukraine", "Moldova", "Russia"],
     answer: "Moldova",
     explanation: "Chișinău is the capital city of Moldova.",
   },
@@ -2214,7 +2214,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which landlocked country in Eastern Europe has Chișinău as its capital?",
-    choices: ["Ukraine", "Belarus", "Moldova", "Russia"],
+    choices: ["Belarus", "Ukraine", "Moldova", "Russia"],
     answer: "Moldova",
     explanation:
       "Moldova is a landlocked country in Eastern Europe, and its capital is Chișinău.",
@@ -2224,7 +2224,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Monaco?",
-    choices: ["Bern", "Brussels", "Monaco", "Amsterdam"],
+    choices: ["Paris", "Vaduz", "Monaco", "Berlin"],
     answer: "Monaco",
     explanation: "Monaco is the capital city of Monaco.",
   },
@@ -2234,7 +2234,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Europe borders only France and has Monaco as its capital?",
-    choices: ["Switzerland", "Monaco", "Luxembourg", "Netherlands"],
+    choices: ["Luxembourg", "Monaco", "Belgium", "Germany"],
     answer: "Monaco",
     explanation:
       "Monaco is in Western Europe, borders only France, and has Monaco as its capital.",
@@ -2244,7 +2244,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Ulan Bator is the capital of which country?",
-    choices: ["Mongolia", "North Korea", "South Korea", "China"],
+    choices: ["Mongolia", "China", "Japan", "North Korea"],
     answer: "Mongolia",
     explanation: "Ulan Bator is the capital city of Mongolia.",
   },
@@ -2254,7 +2254,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which landlocked country in Eastern Asia has Ulan Bator as its capital?",
-    choices: ["Mongolia", "North Korea", "South Korea", "China"],
+    choices: ["Mongolia", "China", "Japan", "North Korea"],
     answer: "Mongolia",
     explanation:
       "Mongolia is a landlocked country in Eastern Asia, and its capital is Ulan Bator.",
@@ -2264,7 +2264,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Montenegro?",
-    choices: ["Tirana", "Sarajevo", "Podgorica", "Belgrade"],
+    choices: ["Belgrade", "Sarajevo", "Podgorica", "Bucharest"],
     answer: "Podgorica",
     explanation: "Podgorica is the capital city of Montenegro.",
   },
@@ -2274,7 +2274,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southeast Europe borders Albania, Bosnia and Herzegovina, and Croatia?",
-    choices: ["Romania", "Serbia", "Albania", "Montenegro"],
+    choices: ["Bulgaria", "Romania", "Serbia", "Montenegro"],
     answer: "Montenegro",
     explanation:
       "Montenegro is in Southeast Europe and borders Albania, Bosnia and Herzegovina, and Croatia.",
@@ -2284,7 +2284,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Rabat is the capital of which country?",
-    choices: ["Tunisia", "Morocco", "Libya", "Sudan"],
+    choices: ["Egypt", "Morocco", "Algeria", "Tunisia"],
     answer: "Morocco",
     explanation: "Rabat is the capital city of Morocco.",
   },
@@ -2293,7 +2293,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Northern Africa has Rabat as its capital?",
-    choices: ["Algeria", "Egypt", "Morocco", "Tunisia"],
+    choices: ["Tunisia", "Egypt", "Morocco", "Algeria"],
     answer: "Morocco",
     explanation:
       "Morocco is part of Northern Africa, and Rabat is its capital city.",
@@ -2303,7 +2303,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Mozambique?",
-    choices: ["Mogadishu", "Maputo", "Kigali", "Victoria"],
+    choices: ["Asmara", "Maputo", "Moroni", "Mogadishu"],
     answer: "Maputo",
     explanation: "Maputo is the capital city of Mozambique.",
   },
@@ -2313,7 +2313,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Tanzania, Zambia, and Zimbabwe?",
-    choices: ["Comoros", "Djibouti", "Mozambique", "Burundi"],
+    choices: ["Mauritius", "Malawi", "Mozambique", "Madagascar"],
     answer: "Mozambique",
     explanation:
       "Mozambique is in Eastern Africa and borders Tanzania, Zambia, and Zimbabwe.",
@@ -2323,7 +2323,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Naypyidaw is the capital of which country?",
-    choices: ["Philippines", "Myanmar", "Laos", "Malaysia"],
+    choices: ["Brunei", "Myanmar", "Malaysia", "Vietnam"],
     answer: "Myanmar",
     explanation: "Naypyidaw is the capital city of Myanmar.",
   },
@@ -2333,7 +2333,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South-Eastern Asia borders Thailand, Bangladesh, and China?",
-    choices: ["Laos", "Malaysia", "Myanmar", "Indonesia"],
+    choices: ["Vietnam", "Brunei", "Myanmar", "Malaysia"],
     answer: "Myanmar",
     explanation:
       "Myanmar is in South-Eastern Asia and borders Thailand, Bangladesh, and China.",
@@ -2343,7 +2343,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Namibia?",
-    choices: ["Pretoria", "Gaborone", "Lobamba", "Windhoek"],
+    choices: ["Gaborone", "Pretoria", "Lobamba", "Windhoek"],
     answer: "Windhoek",
     explanation: "Windhoek is the capital city of Namibia.",
   },
@@ -2353,7 +2353,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Africa borders Zambia, Angola, and Botswana?",
-    choices: ["Namibia", "Lesotho", "South Africa", "Botswana"],
+    choices: ["Namibia", "Lesotho", "Eswatini", "South Africa"],
     answer: "Namibia",
     explanation:
       "Namibia is in Southern Africa and borders Zambia, Angola, and Botswana.",
@@ -2363,7 +2363,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Yaren is the capital of which country?",
-    choices: ["Palau", "Nauru", "Marshall Islands", "Micronesia"],
+    choices: ["Micronesia", "Nauru", "Palau", "Kiribati"],
     answer: "Nauru",
     explanation: "Yaren is the capital city of Nauru.",
   },
@@ -2372,7 +2372,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Micronesia has Yaren as its capital?",
-    choices: ["Kiribati", "Marshall Islands", "Nauru", "Palau"],
+    choices: ["Kiribati", "Micronesia", "Nauru", "Palau"],
     answer: "Nauru",
     explanation: "Nauru is part of Micronesia, and Yaren is its capital city.",
   },
@@ -2381,7 +2381,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Nepal?",
-    choices: ["Kathmandu", "Thimphu", "New Delhi", "Tehran"],
+    choices: ["Kathmandu", "Kabul", "Islamabad", "Thimphu"],
     answer: "Kathmandu",
     explanation: "Kathmandu is the capital city of Nepal.",
   },
@@ -2391,7 +2391,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which landlocked country in Southern Asia has Kathmandu as its capital?",
-    choices: ["Nepal", "Iran", "Maldives", "Pakistan"],
+    choices: ["Nepal", "Bangladesh", "India", "Iran"],
     answer: "Nepal",
     explanation:
       "Nepal is a landlocked country in Southern Asia, and its capital is Kathmandu.",
@@ -2401,7 +2401,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Amsterdam is the capital of which country?",
-    choices: ["Netherlands", "Liechtenstein", "Luxembourg", "Monaco"],
+    choices: ["Netherlands", "Switzerland", "Luxembourg", "Liechtenstein"],
     answer: "Netherlands",
     explanation: "Amsterdam is the capital city of Netherlands.",
   },
@@ -2410,7 +2410,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Europe has Amsterdam as its capital?",
-    choices: ["Luxembourg", "Netherlands", "Germany", "Liechtenstein"],
+    choices: ["Liechtenstein", "Netherlands", "Switzerland", "Luxembourg"],
     answer: "Netherlands",
     explanation:
       "Netherlands is part of Western Europe, and Amsterdam is its capital city.",
@@ -2420,7 +2420,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of New Zealand?",
-    choices: ["Wellington", "Honiara", "Nuku'alofa", "Funafuti"],
+    choices: ["Wellington", "Nuku'alofa", "Ngerulmud", "Canberra"],
     answer: "Wellington",
     explanation: "Wellington is the capital city of New Zealand.",
   },
@@ -2430,7 +2430,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Australia and New Zealand has Wellington as its capital?",
-    choices: ["Palau", "New Zealand", "Micronesia", "Nauru"],
+    choices: ["Marshall Islands", "New Zealand", "Nauru", "Solomon Islands"],
     answer: "New Zealand",
     explanation:
       "New Zealand is part of Australia and New Zealand, and Wellington is its capital city.",
@@ -2440,7 +2440,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Managua is the capital of which country?",
-    choices: ["Guatemala", "Nicaragua", "Costa Rica", "El Salvador"],
+    choices: ["Panama", "Nicaragua", "Guatemala", "Honduras"],
     answer: "Nicaragua",
     explanation: "Managua is the capital city of Nicaragua.",
   },
@@ -2459,7 +2459,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Niger?",
-    choices: ["Niamey", "Ouagadougou", "Praia", "Banjul"],
+    choices: ["Niamey", "Nouakchott", "Conakry", "Bamako"],
     answer: "Niamey",
     explanation: "Niamey is the capital city of Niger.",
   },
@@ -2469,7 +2469,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Algeria, Benin, and Burkina Faso?",
-    choices: ["Ivory Coast", "Niger", "Guinea", "Guinea-Bissau"],
+    choices: ["Gambia", "Niger", "Nigeria", "Ghana"],
     answer: "Niger",
     explanation:
       "Niger is in Western Africa and borders Algeria, Benin, and Burkina Faso.",
@@ -2479,7 +2479,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Abuja is the capital of which country?",
-    choices: ["Togo", "Benin", "Burkina Faso", "Nigeria"],
+    choices: ["Niger", "Liberia", "Gambia", "Nigeria"],
     answer: "Nigeria",
     explanation: "Abuja is the capital city of Nigeria.",
   },
@@ -2489,7 +2489,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Niger, Benin, and Cameroon?",
-    choices: ["Nigeria", "Gambia", "Ghana", "Guinea"],
+    choices: ["Nigeria", "Liberia", "Gambia", "Guinea"],
     answer: "Nigeria",
     explanation:
       "Nigeria is in Western Africa and borders Niger, Benin, and Cameroon.",
@@ -2499,7 +2499,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of North Korea?",
-    choices: ["Seoul", "Pyongyang", "Tokyo", "Ulan Bator"],
+    choices: ["Tokyo", "Pyongyang", "Beijing", "Seoul"],
     answer: "Pyongyang",
     explanation: "Pyongyang is the capital city of North Korea.",
   },
@@ -2509,7 +2509,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Asia borders China, South Korea, and Russia?",
-    choices: ["Japan", "Mongolia", "North Korea", "China"],
+    choices: ["Japan", "China", "North Korea", "Mongolia"],
     answer: "North Korea",
     explanation:
       "North Korea is in Eastern Asia and borders China, South Korea, and Russia.",
@@ -2519,7 +2519,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Skopje is the capital of which country?",
-    choices: ["Croatia", "Montenegro", "Romania", "North Macedonia"],
+    choices: ["Albania", "Romania", "Bulgaria", "North Macedonia"],
     answer: "North Macedonia",
     explanation: "Skopje is the capital city of North Macedonia.",
   },
@@ -2529,7 +2529,12 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southeast Europe borders Serbia, Albania, and Bulgaria?",
-    choices: ["North Macedonia", "Bulgaria", "Croatia", "Montenegro"],
+    choices: [
+      "North Macedonia",
+      "Romania",
+      "Croatia",
+      "Bosnia and Herzegovina",
+    ],
     answer: "North Macedonia",
     explanation:
       "North Macedonia is in Southeast Europe and borders Serbia, Albania, and Bulgaria.",
@@ -2539,7 +2544,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Norway?",
-    choices: ["Oslo", "Dublin", "Riga", "Vilnius"],
+    choices: ["Oslo", "Riga", "Dublin", "London"],
     answer: "Oslo",
     explanation: "Oslo is the capital city of Norway.",
   },
@@ -2549,7 +2554,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Northern Europe borders Finland, Sweden, and Russia?",
-    choices: ["Ireland", "Norway", "Finland", "Iceland"],
+    choices: ["Estonia", "Norway", "Latvia", "Denmark"],
     answer: "Norway",
     explanation:
       "Norway is in Northern Europe and borders Finland, Sweden, and Russia.",
@@ -2559,7 +2564,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Muscat is the capital of which country?",
-    choices: ["Georgia", "Iraq", "Israel", "Oman"],
+    choices: ["Jordan", "Yemen", "Iraq", "Oman"],
     answer: "Oman",
     explanation: "Muscat is the capital city of Oman.",
   },
@@ -2569,7 +2574,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Asia borders United Arab Emirates, Yemen, and Saudi Arabia?",
-    choices: ["Oman", "Qatar", "Saudi Arabia", "Syria"],
+    choices: ["Oman", "Jordan", "Iraq", "Bahrain"],
     answer: "Oman",
     explanation:
       "Oman is in Western Asia and borders United Arab Emirates, Yemen, and Saudi Arabia.",
@@ -2579,7 +2584,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Pakistan?",
-    choices: ["New Delhi", "Tehran", "Malé", "Islamabad"],
+    choices: ["Kathmandu", "Colombo", "Thimphu", "Islamabad"],
     answer: "Islamabad",
     explanation: "Islamabad is the capital city of Pakistan.",
   },
@@ -2589,7 +2594,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Asia borders Iran, Afghanistan, and China?",
-    choices: ["Pakistan", "Bhutan", "India", "Iran"],
+    choices: ["Pakistan", "Bhutan", "Maldives", "Bangladesh"],
     answer: "Pakistan",
     explanation:
       "Pakistan is in Southern Asia and borders Iran, Afghanistan, and China.",
@@ -2599,7 +2604,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Ngerulmud is the capital of which country?",
-    choices: ["Nauru", "Palau", "Marshall Islands", "Micronesia"],
+    choices: ["Micronesia", "Palau", "Nauru", "Kiribati"],
     answer: "Palau",
     explanation: "Ngerulmud is the capital city of Palau.",
   },
@@ -2608,7 +2613,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Micronesia has Ngerulmud as its capital?",
-    choices: ["Kiribati", "Marshall Islands", "Palau", "Nauru"],
+    choices: ["Kiribati", "Micronesia", "Palau", "Nauru"],
     answer: "Palau",
     explanation:
       "Palau is part of Micronesia, and Ngerulmud is its capital city.",
@@ -2618,7 +2623,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Palestine?",
-    choices: ["Kuwait City", "Ramallah", "Jerusalem", "Amman"],
+    choices: ["Baghdad", "Ramallah", "Riyadh", "Damascus"],
     answer: "Ramallah",
     explanation: "Ramallah is the capital city of Palestine.",
   },
@@ -2627,7 +2632,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia borders Israel, Egypt, and Jordan?",
-    choices: ["Türkiye", "United Arab Emirates", "Palestine", "Syria"],
+    choices: ["Azerbaijan", "Armenia", "Palestine", "Türkiye"],
     answer: "Palestine",
     explanation:
       "Palestine is in Western Asia and borders Israel, Egypt, and Jordan.",
@@ -2637,7 +2642,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Panama City is the capital of which country?",
-    choices: ["Nicaragua", "Belize", "Panama", "Honduras"],
+    choices: ["Guatemala", "Nicaragua", "Panama", "Belize"],
     answer: "Panama",
     explanation: "Panama City is the capital city of Panama.",
   },
@@ -2646,7 +2651,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Central America has Panama City as its capital?",
-    choices: ["Belize", "Costa Rica", "El Salvador", "Panama"],
+    choices: ["Belize", "Guatemala", "Nicaragua", "Panama"],
     answer: "Panama",
     explanation:
       "Panama is part of Central America, and Panama City is its capital city.",
@@ -2656,7 +2661,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Papua New Guinea?",
-    choices: ["Port Vila", "Port Moresby", "Suva", "Honiara"],
+    choices: ["Suva", "Port Moresby", "Port Vila", "Honiara"],
     answer: "Port Moresby",
     explanation: "Port Moresby is the capital city of Papua New Guinea.",
   },
@@ -2666,7 +2671,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Melanesia borders only Indonesia and has Port Moresby as its capital?",
-    choices: ["Papua New Guinea", "Vanuatu", "Fiji", "Solomon Islands"],
+    choices: ["Papua New Guinea", "Solomon Islands", "Vanuatu", "Fiji"],
     answer: "Papua New Guinea",
     explanation:
       "Papua New Guinea is in Melanesia, borders only Indonesia, and has Port Moresby as its capital.",
@@ -2676,7 +2681,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Asunción is the capital of which country?",
-    choices: ["Guyana", "Peru", "Suriname", "Paraguay"],
+    choices: ["Uruguay", "Peru", "Colombia", "Paraguay"],
     answer: "Paraguay",
     explanation: "Asunción is the capital city of Paraguay.",
   },
@@ -2686,7 +2691,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South America borders Brazil, Argentina, and Bolivia?",
-    choices: ["Paraguay", "Peru", "Suriname", "Uruguay"],
+    choices: ["Paraguay", "Uruguay", "Peru", "Colombia"],
     answer: "Paraguay",
     explanation:
       "Paraguay is in South America and borders Brazil, Argentina, and Bolivia.",
@@ -2696,7 +2701,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Peru?",
-    choices: ["Santiago", "Bogotá", "Lima", "Brasília"],
+    choices: ["Sucre", "Bogotá", "Lima", "Quito"],
     answer: "Lima",
     explanation: "Lima is the capital city of Peru.",
   },
@@ -2706,7 +2711,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South America borders Brazil, Chile, and Colombia?",
-    choices: ["Chile", "Colombia", "Ecuador", "Peru"],
+    choices: ["Paraguay", "Guyana", "Bolivia", "Peru"],
     answer: "Peru",
     explanation:
       "Peru is in South America and borders Brazil, Chile, and Colombia.",
@@ -2716,7 +2721,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Manila is the capital of which country?",
-    choices: ["Cambodia", "Indonesia", "Philippines", "Brunei"],
+    choices: ["Indonesia", "Singapore", "Philippines", "Timor-Leste"],
     answer: "Philippines",
     explanation: "Manila is the capital city of Philippines.",
   },
@@ -2725,7 +2730,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in South-Eastern Asia has Manila as its capital?",
-    choices: ["Indonesia", "Laos", "Malaysia", "Philippines"],
+    choices: ["Timor-Leste", "Indonesia", "Singapore", "Philippines"],
     answer: "Philippines",
     explanation:
       "Philippines is part of South-Eastern Asia, and Manila is its capital city.",
@@ -2735,7 +2740,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Poland?",
-    choices: ["Warsaw", "Prague", "Budapest", "Bratislava"],
+    choices: ["Warsaw", "Prague", "Vienna", "Budapest"],
     answer: "Warsaw",
     explanation: "Warsaw is the capital city of Poland.",
   },
@@ -2775,7 +2780,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Qatar?",
-    choices: ["Sana'a", "Yerevan", "Baku", "Doha"],
+    choices: ["Damascus", "Ankara", "Baku", "Doha"],
     answer: "Doha",
     explanation: "Doha is the capital city of Qatar.",
   },
@@ -2785,7 +2790,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Asia borders only Saudi Arabia and has Doha as its capital?",
-    choices: ["Lebanon", "Oman", "Qatar", "Kuwait"],
+    choices: ["Yemen", "Iraq", "Qatar", "Syria"],
     answer: "Qatar",
     explanation:
       "Qatar is in Western Asia, borders only Saudi Arabia, and has Doha as its capital.",
@@ -2797,9 +2802,9 @@ export const generatedQuestionBank = [
     prompt: "Brazzaville is the capital of which country?",
     choices: [
       "Republic of the Congo",
-      "DR Congo",
+      "São Tomé and Príncipe",
+      "Central African Republic",
       "Equatorial Guinea",
-      "Gabon",
     ],
     answer: "Republic of the Congo",
     explanation: "Brazzaville is the capital city of Republic of the Congo.",
@@ -2811,10 +2816,10 @@ export const generatedQuestionBank = [
     prompt:
       "Which country in Middle Africa borders Cameroon, Central African Republic, and DR Congo?",
     choices: [
-      "DR Congo",
+      "South Sudan",
       "Republic of the Congo",
-      "Central African Republic",
-      "Chad",
+      "São Tomé and Príncipe",
+      "Equatorial Guinea",
     ],
     answer: "Republic of the Congo",
     explanation:
@@ -2825,7 +2830,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Romania?",
-    choices: ["Tirana", "Sarajevo", "Sofia", "Bucharest"],
+    choices: ["Belgrade", "Podgorica", "Sarajevo", "Bucharest"],
     answer: "Bucharest",
     explanation: "Bucharest is the capital city of Romania.",
   },
@@ -2835,7 +2840,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southeast Europe borders Moldova, Serbia, and Ukraine?",
-    choices: ["Romania", "Serbia", "Albania", "Bosnia and Herzegovina"],
+    choices: ["Romania", "Albania", "Croatia", "Bulgaria"],
     answer: "Romania",
     explanation:
       "Romania is in Southeast Europe and borders Moldova, Serbia, and Ukraine.",
@@ -2845,7 +2850,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Moscow is the capital of which country?",
-    choices: ["Belarus", "Russia", "Moldova", "Ukraine"],
+    choices: ["Ukraine", "Russia", "Moldova", "Belarus"],
     answer: "Russia",
     explanation: "Moscow is the capital city of Russia.",
   },
@@ -2855,7 +2860,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Europe borders Norway, Poland, and Ukraine?",
-    choices: ["Belarus", "Moldova", "Russia", "Ukraine"],
+    choices: ["Belarus", "Ukraine", "Russia", "Moldova"],
     answer: "Russia",
     explanation:
       "Russia is in Eastern Europe and borders Norway, Poland, and Ukraine.",
@@ -2865,7 +2870,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Rwanda?",
-    choices: ["Asmara", "Addis Ababa", "Nairobi", "Kigali"],
+    choices: ["Kampala", "Moroni", "Nairobi", "Kigali"],
     answer: "Kigali",
     explanation: "Kigali is the capital city of Rwanda.",
   },
@@ -2875,7 +2880,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Uganda, Burundi, and DR Congo?",
-    choices: ["Rwanda", "Seychelles", "Somalia", "Tanzania"],
+    choices: ["Rwanda", "Zambia", "Eritrea", "Kenya"],
     answer: "Rwanda",
     explanation:
       "Rwanda is in Eastern Africa and borders Uganda, Burundi, and DR Congo.",
@@ -2885,7 +2890,12 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Basseterre is the capital of which country?",
-    choices: ["Saint Kitts and Nevis", "Barbados", "Cuba", "Dominica"],
+    choices: [
+      "Saint Kitts and Nevis",
+      "Saint Vincent and the Grenadines",
+      "Saint Lucia",
+      "Antigua and Barbuda",
+    ],
     answer: "Saint Kitts and Nevis",
     explanation: "Basseterre is the capital city of Saint Kitts and Nevis.",
   },
@@ -2895,10 +2905,10 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt: "Which country in Caribbean has Basseterre as its capital?",
     choices: [
-      "Grenada",
+      "Antigua and Barbuda",
       "Saint Kitts and Nevis",
-      "Dominica",
-      "Dominican Republic",
+      "Saint Vincent and the Grenadines",
+      "Saint Lucia",
     ],
     answer: "Saint Kitts and Nevis",
     explanation:
@@ -2909,7 +2919,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Saint Lucia?",
-    choices: ["Havana", "Castries", "Nassau", "Bridgetown"],
+    choices: ["Basseterre", "Castries", "Kingston", "Kingstown"],
     answer: "Castries",
     explanation: "Castries is the capital city of Saint Lucia.",
   },
@@ -2918,7 +2928,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Caribbean has Castries as its capital?",
-    choices: ["Dominica", "Dominican Republic", "Saint Lucia", "Cuba"],
+    choices: ["Dominica", "Grenada", "Saint Lucia", "Saint Kitts and Nevis"],
     answer: "Saint Lucia",
     explanation:
       "Saint Lucia is part of Caribbean, and Castries is its capital city.",
@@ -2929,10 +2939,10 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt: "Kingstown is the capital of which country?",
     choices: [
-      "Dominican Republic",
-      "Grenada",
+      "Saint Lucia",
+      "Antigua and Barbuda",
       "Saint Vincent and the Grenadines",
-      "Dominica",
+      "Saint Kitts and Nevis",
     ],
     answer: "Saint Vincent and the Grenadines",
     explanation:
@@ -2944,9 +2954,9 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt: "Which country in Caribbean has Kingstown as its capital?",
     choices: [
-      "Grenada",
-      "Haiti",
-      "Jamaica",
+      "Saint Kitts and Nevis",
+      "Saint Lucia",
+      "Antigua and Barbuda",
       "Saint Vincent and the Grenadines",
     ],
     answer: "Saint Vincent and the Grenadines",
@@ -2958,7 +2968,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Samoa?",
-    choices: ["Palikir", "Yaren", "Apia", "Majuro"],
+    choices: ["Honiara", "Yaren", "Apia", "Suva"],
     answer: "Apia",
     explanation: "Apia is the capital city of Samoa.",
   },
@@ -2967,7 +2977,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Polynesia has Apia as its capital?",
-    choices: ["Tuvalu", "Vanuatu", "Australia", "Samoa"],
+    choices: ["Tonga", "Nauru", "Palau", "Samoa"],
     answer: "Samoa",
     explanation: "Samoa is part of Polynesia, and Apia is its capital city.",
   },
@@ -2976,7 +2986,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "City of San Marino is the capital of which country?",
-    choices: ["Italy", "Malta", "Portugal", "San Marino"],
+    choices: ["Spain", "Vatican City", "Portugal", "San Marino"],
     answer: "San Marino",
     explanation: "City of San Marino is the capital city of San Marino.",
   },
@@ -2986,7 +2996,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which landlocked country in Southern Europe has City of San Marino as its capital?",
-    choices: ["Malta", "Portugal", "Spain", "San Marino"],
+    choices: ["Cyprus", "Greece", "Italy", "San Marino"],
     answer: "San Marino",
     explanation:
       "San Marino is a landlocked country in Southern Europe, and its capital is City of San Marino.",
@@ -2996,7 +3006,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of São Tomé and Príncipe?",
-    choices: ["Libreville", "Brazzaville", "Juba", "São Tomé"],
+    choices: ["Yaoundé", "Kinshasa", "N'Djamena", "São Tomé"],
     answer: "São Tomé",
     explanation: "São Tomé is the capital city of São Tomé and Príncipe.",
   },
@@ -3007,9 +3017,9 @@ export const generatedQuestionBank = [
     prompt: "Which country in Middle Africa has São Tomé as its capital?",
     choices: [
       "São Tomé and Príncipe",
+      "Republic of the Congo",
+      "South Sudan",
       "Central African Republic",
-      "Chad",
-      "DR Congo",
     ],
     answer: "São Tomé and Príncipe",
     explanation:
@@ -3020,7 +3030,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Riyadh is the capital of which country?",
-    choices: ["Israel", "Jordan", "Saudi Arabia", "Iraq"],
+    choices: ["Armenia", "Georgia", "Saudi Arabia", "Syria"],
     answer: "Saudi Arabia",
     explanation: "Riyadh is the capital city of Saudi Arabia.",
   },
@@ -3029,7 +3039,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia borders Iraq, Jordan, and Kuwait?",
-    choices: ["Qatar", "Syria", "Türkiye", "Saudi Arabia"],
+    choices: ["Syria", "Armenia", "Georgia", "Saudi Arabia"],
     answer: "Saudi Arabia",
     explanation:
       "Saudi Arabia is in Western Asia and borders Iraq, Jordan, and Kuwait.",
@@ -3039,7 +3049,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Senegal?",
-    choices: ["Nouakchott", "Niamey", "Abuja", "Dakar"],
+    choices: ["Abuja", "Accra", "Praia", "Dakar"],
     answer: "Dakar",
     explanation: "Dakar is the capital city of Senegal.",
   },
@@ -3049,7 +3059,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Guinea, Guinea-Bissau, and Mali?",
-    choices: ["Senegal", "Togo", "Benin", "Burkina Faso"],
+    choices: ["Senegal", "Sierra Leone", "Liberia", "Nigeria"],
     answer: "Senegal",
     explanation:
       "Senegal is in Western Africa and borders Guinea, Guinea-Bissau, and Mali.",
@@ -3059,7 +3069,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Belgrade is the capital of which country?",
-    choices: ["Romania", "Serbia", "Montenegro", "North Macedonia"],
+    choices: ["Romania", "Serbia", "Albania", "Croatia"],
     answer: "Serbia",
     explanation: "Belgrade is the capital city of Serbia.",
   },
@@ -3069,7 +3079,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southeast Europe borders Bulgaria, Croatia, and Hungary?",
-    choices: ["Montenegro", "North Macedonia", "Serbia", "Croatia"],
+    choices: ["Romania", "Montenegro", "Serbia", "Albania"],
     answer: "Serbia",
     explanation:
       "Serbia is in Southeast Europe and borders Bulgaria, Croatia, and Hungary.",
@@ -3079,7 +3089,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Seychelles?",
-    choices: ["Victoria", "Lusaka", "Harare", "Gitega"],
+    choices: ["Victoria", "Kampala", "Asmara", "Djibouti"],
     answer: "Victoria",
     explanation: "Victoria is the capital city of Seychelles.",
   },
@@ -3088,7 +3098,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Eastern Africa has Victoria as its capital?",
-    choices: ["Zambia", "Seychelles", "Tanzania", "Uganda"],
+    choices: ["Madagascar", "Seychelles", "Somalia", "Mauritius"],
     answer: "Seychelles",
     explanation:
       "Seychelles is part of Eastern Africa, and Victoria is its capital city.",
@@ -3098,7 +3108,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Freetown is the capital of which country?",
-    choices: ["Sierra Leone", "Mauritania", "Niger", "Nigeria"],
+    choices: ["Sierra Leone", "Senegal", "Burkina Faso", "Cape Verde"],
     answer: "Sierra Leone",
     explanation: "Freetown is the capital city of Sierra Leone.",
   },
@@ -3107,7 +3117,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Africa has Freetown as its capital?",
-    choices: ["Togo", "Sierra Leone", "Nigeria", "Senegal"],
+    choices: ["Cape Verde", "Sierra Leone", "Senegal", "Burkina Faso"],
     answer: "Sierra Leone",
     explanation:
       "Sierra Leone is part of Western Africa, and Freetown is its capital city.",
@@ -3117,7 +3127,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Singapore?",
-    choices: ["Phnom Penh", "Singapore", "Hanoi", "Bandar Seri Begawan"],
+    choices: ["Bangkok", "Singapore", "Vientiane", "Naypyidaw"],
     answer: "Singapore",
     explanation: "Singapore is the capital city of Singapore.",
   },
@@ -3126,7 +3136,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in South-Eastern Asia has Singapore as its capital?",
-    choices: ["Indonesia", "Laos", "Singapore", "Cambodia"],
+    choices: ["Timor-Leste", "Cambodia", "Singapore", "Indonesia"],
     answer: "Singapore",
     explanation:
       "Singapore is part of South-Eastern Asia, and Singapore is its capital city.",
@@ -3146,7 +3156,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central Europe borders Austria, Czechia, and Hungary?",
-    choices: ["Poland", "Slovenia", "Austria", "Slovakia"],
+    choices: ["Slovenia", "Poland", "Austria", "Slovakia"],
     answer: "Slovakia",
     explanation:
       "Slovakia is in Central Europe and borders Austria, Czechia, and Hungary.",
@@ -3156,7 +3166,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Slovenia?",
-    choices: ["Warsaw", "Ljubljana", "Prague", "Budapest"],
+    choices: ["Budapest", "Ljubljana", "Bratislava", "Vienna"],
     answer: "Ljubljana",
     explanation: "Ljubljana is the capital city of Slovenia.",
   },
@@ -3166,7 +3176,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central Europe borders Croatia, Italy, and Hungary?",
-    choices: ["Czechia", "Hungary", "Slovenia", "Austria"],
+    choices: ["Austria", "Czechia", "Slovenia", "Slovakia"],
     answer: "Slovenia",
     explanation:
       "Slovenia is in Central Europe and borders Croatia, Italy, and Hungary.",
@@ -3185,7 +3195,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Melanesia has Honiara as its capital?",
-    choices: ["Papua New Guinea", "Vanuatu", "Solomon Islands", "Fiji"],
+    choices: ["Vanuatu", "Fiji", "Solomon Islands", "Papua New Guinea"],
     answer: "Solomon Islands",
     explanation:
       "Solomon Islands is part of Melanesia, and Honiara is its capital city.",
@@ -3195,7 +3205,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Somalia?",
-    choices: ["Maputo", "Kigali", "Mogadishu", "Port Louis"],
+    choices: ["Maputo", "Djibouti", "Mogadishu", "Moroni"],
     answer: "Mogadishu",
     explanation: "Mogadishu is the capital city of Somalia.",
   },
@@ -3205,7 +3215,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Kenya, Djibouti, and Ethiopia?",
-    choices: ["Zimbabwe", "Burundi", "Comoros", "Somalia"],
+    choices: ["Seychelles", "Tanzania", "Zambia", "Somalia"],
     answer: "Somalia",
     explanation:
       "Somalia is in Eastern Africa and borders Kenya, Djibouti, and Ethiopia.",
@@ -3215,7 +3225,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Pretoria is the capital of which country?",
-    choices: ["South Africa", "Lesotho", "Namibia", "Botswana"],
+    choices: ["South Africa", "Botswana", "Namibia", "Eswatini"],
     answer: "South Africa",
     explanation: "Pretoria is the capital city of South Africa.",
   },
@@ -3225,7 +3235,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Africa borders Botswana, Lesotho, and Mozambique?",
-    choices: ["Namibia", "South Africa", "Eswatini", "Lesotho"],
+    choices: ["Botswana", "South Africa", "Namibia", "Eswatini"],
     answer: "South Africa",
     explanation:
       "South Africa is in Southern Africa and borders Botswana, Lesotho, and Mozambique.",
@@ -3235,7 +3245,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of South Korea?",
-    choices: ["Pyongyang", "Beijing", "Tokyo", "Seoul"],
+    choices: ["Tokyo", "Beijing", "Pyongyang", "Seoul"],
     answer: "Seoul",
     explanation: "Seoul is the capital city of South Korea.",
   },
@@ -3245,7 +3255,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Asia borders only North Korea and has Seoul as its capital?",
-    choices: ["China", "Japan", "South Korea", "North Korea"],
+    choices: ["China", "Japan", "South Korea", "Mongolia"],
     answer: "South Korea",
     explanation:
       "South Korea is in Eastern Asia, borders only North Korea, and has Seoul as its capital.",
@@ -3255,7 +3265,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Juba is the capital of which country?",
-    choices: ["Equatorial Guinea", "South Sudan", "Chad", "DR Congo"],
+    choices: ["Cameroon", "South Sudan", "DR Congo", "São Tomé and Príncipe"],
     answer: "South Sudan",
     explanation: "Juba is the capital city of South Sudan.",
   },
@@ -3265,7 +3275,12 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Middle Africa borders Uganda, Central African Republic, and DR Congo?",
-    choices: ["Central African Republic", "Chad", "South Sudan", "Cameroon"],
+    choices: [
+      "Cameroon",
+      "Equatorial Guinea",
+      "South Sudan",
+      "São Tomé and Príncipe",
+    ],
     answer: "South Sudan",
     explanation:
       "South Sudan is in Middle Africa and borders Uganda, Central African Republic, and DR Congo.",
@@ -3275,7 +3290,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Spain?",
-    choices: ["Rome", "Valletta", "Lisbon", "Madrid"],
+    choices: ["Athens", "Lisbon", "Nicosia", "Madrid"],
     answer: "Madrid",
     explanation: "Madrid is the capital city of Spain.",
   },
@@ -3285,7 +3300,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Europe borders Morocco, Andorra, and France?",
-    choices: ["Spain", "Greece", "Italy", "Malta"],
+    choices: ["Spain", "San Marino", "Italy", "Malta"],
     answer: "Spain",
     explanation:
       "Spain is in Southern Europe and borders Morocco, Andorra, and France.",
@@ -3295,7 +3310,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Colombo is the capital of which country?",
-    choices: ["Pakistan", "Sri Lanka", "Maldives", "Nepal"],
+    choices: ["Pakistan", "Sri Lanka", "Bangladesh", "Maldives"],
     answer: "Sri Lanka",
     explanation: "Colombo is the capital city of Sri Lanka.",
   },
@@ -3305,7 +3320,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Southern Asia borders only India and has Colombo as its capital?",
-    choices: ["Sri Lanka", "Maldives", "Nepal", "Pakistan"],
+    choices: ["Sri Lanka", "Bangladesh", "Maldives", "Pakistan"],
     answer: "Sri Lanka",
     explanation:
       "Sri Lanka is in Southern Asia, borders only India, and has Colombo as its capital.",
@@ -3315,7 +3330,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Sudan?",
-    choices: ["Tunis", "Khartoum", "Tripoli", "Rabat"],
+    choices: ["Cairo", "Khartoum", "Algiers", "Tripoli"],
     answer: "Khartoum",
     explanation: "Khartoum is the capital city of Sudan.",
   },
@@ -3325,7 +3340,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Northern Africa borders Libya, South Sudan, and Central African Republic?",
-    choices: ["Libya", "Morocco", "Sudan", "Egypt"],
+    choices: ["Algeria", "Morocco", "Sudan", "Egypt"],
     answer: "Sudan",
     explanation:
       "Sudan is in Northern Africa and borders Libya, South Sudan, and Central African Republic.",
@@ -3335,7 +3350,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Paramaribo is the capital of which country?",
-    choices: ["Argentina", "Bolivia", "Brazil", "Suriname"],
+    choices: ["Colombia", "Paraguay", "Argentina", "Suriname"],
     answer: "Suriname",
     explanation: "Paramaribo is the capital city of Suriname.",
   },
@@ -3344,7 +3359,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in South America has Paramaribo as its capital?",
-    choices: ["Suriname", "Colombia", "Ecuador", "Guyana"],
+    choices: ["Suriname", "Colombia", "Paraguay", "Argentina"],
     answer: "Suriname",
     explanation:
       "Suriname is part of South America, and Paramaribo is its capital city.",
@@ -3354,7 +3369,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Sweden?",
-    choices: ["Riga", "Vilnius", "Stockholm", "Dublin"],
+    choices: ["Copenhagen", "Helsinki", "Stockholm", "Reykjavik"],
     answer: "Stockholm",
     explanation: "Stockholm is the capital city of Sweden.",
   },
@@ -3363,7 +3378,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Northern Europe has Stockholm as its capital?",
-    choices: ["Denmark", "Estonia", "Finland", "Sweden"],
+    choices: ["Latvia", "Norway", "Denmark", "Sweden"],
     answer: "Sweden",
     explanation:
       "Sweden is part of Northern Europe, and Stockholm is its capital city.",
@@ -3373,7 +3388,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Bern is the capital of which country?",
-    choices: ["Switzerland", "France", "Germany", "Liechtenstein"],
+    choices: ["Switzerland", "Netherlands", "Luxembourg", "Liechtenstein"],
     answer: "Switzerland",
     explanation: "Bern is the capital city of Switzerland.",
   },
@@ -3383,7 +3398,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Europe borders Italy, Liechtenstein, and Germany?",
-    choices: ["Germany", "Switzerland", "Belgium", "France"],
+    choices: ["Belgium", "Switzerland", "Netherlands", "Luxembourg"],
     answer: "Switzerland",
     explanation:
       "Switzerland is in Western Europe and borders Italy, Liechtenstein, and Germany.",
@@ -3393,7 +3408,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Syria?",
-    choices: ["Doha", "Riyadh", "Ankara", "Damascus"],
+    choices: ["Doha", "Ramallah", "Baghdad", "Damascus"],
     answer: "Damascus",
     explanation: "Damascus is the capital city of Syria.",
   },
@@ -3403,7 +3418,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Asia borders Jordan, Lebanon, and Türkiye?",
-    choices: ["Syria", "Bahrain", "Georgia", "Iraq"],
+    choices: ["Syria", "Saudi Arabia", "Armenia", "Georgia"],
     answer: "Syria",
     explanation:
       "Syria is in Western Asia and borders Jordan, Lebanon, and Türkiye.",
@@ -3413,7 +3428,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Dushanbe is the capital of which country?",
-    choices: ["Uzbekistan", "Tajikistan", "Kyrgyzstan", "Turkmenistan"],
+    choices: ["Kyrgyzstan", "Tajikistan", "Turkmenistan", "Kazakhstan"],
     answer: "Tajikistan",
     explanation: "Dushanbe is the capital city of Tajikistan.",
   },
@@ -3423,7 +3438,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central Asia borders China, Kyrgyzstan, and Uzbekistan?",
-    choices: ["Kyrgyzstan", "Turkmenistan", "Tajikistan", "Kazakhstan"],
+    choices: ["Kazakhstan", "Kyrgyzstan", "Tajikistan", "Turkmenistan"],
     answer: "Tajikistan",
     explanation:
       "Tajikistan is in Central Asia and borders China, Kyrgyzstan, and Uzbekistan.",
@@ -3433,7 +3448,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Tanzania?",
-    choices: ["Victoria", "Mogadishu", "Kampala", "Dodoma"],
+    choices: ["Djibouti", "Asmara", "Gitega", "Dodoma"],
     answer: "Dodoma",
     explanation: "Dodoma is the capital city of Tanzania.",
   },
@@ -3443,7 +3458,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Malawi, Mozambique, and Rwanda?",
-    choices: ["Tanzania", "Djibouti", "Eritrea", "Ethiopia"],
+    choices: ["Tanzania", "Ethiopia", "Somalia", "Zambia"],
     answer: "Tanzania",
     explanation:
       "Tanzania is in Eastern Africa and borders Malawi, Mozambique, and Rwanda.",
@@ -3453,7 +3468,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Bangkok is the capital of which country?",
-    choices: ["Vietnam", "Brunei", "Cambodia", "Thailand"],
+    choices: ["Timor-Leste", "Cambodia", "Malaysia", "Thailand"],
     answer: "Thailand",
     explanation: "Bangkok is the capital city of Thailand.",
   },
@@ -3463,7 +3478,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South-Eastern Asia borders Malaysia, Myanmar, and Cambodia?",
-    choices: ["Thailand", "Timor-Leste", "Vietnam", "Brunei"],
+    choices: ["Thailand", "Timor-Leste", "Indonesia", "Singapore"],
     answer: "Thailand",
     explanation:
       "Thailand is in South-Eastern Asia and borders Malaysia, Myanmar, and Cambodia.",
@@ -3473,7 +3488,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Timor-Leste?",
-    choices: ["Naypyidaw", "Dili", "Vientiane", "Kuala Lumpur"],
+    choices: ["Bangkok", "Dili", "Hanoi", "Manila"],
     answer: "Dili",
     explanation: "Dili is the capital city of Timor-Leste.",
   },
@@ -3483,7 +3498,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South-Eastern Asia borders only Indonesia and has Dili as its capital?",
-    choices: ["Timor-Leste", "Singapore", "Thailand", "Vietnam"],
+    choices: ["Timor-Leste", "Thailand", "Philippines", "Singapore"],
     answer: "Timor-Leste",
     explanation:
       "Timor-Leste is in South-Eastern Asia, borders only Indonesia, and has Dili as its capital.",
@@ -3493,7 +3508,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Lomé is the capital of which country?",
-    choices: ["Ivory Coast", "Liberia", "Mali", "Togo"],
+    choices: ["Mali", "Benin", "Ghana", "Togo"],
     answer: "Togo",
     explanation: "Lomé is the capital city of Togo.",
   },
@@ -3503,7 +3518,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Western Africa borders Benin, Burkina Faso, and Ghana?",
-    choices: ["Togo", "Niger", "Nigeria", "Senegal"],
+    choices: ["Togo", "Mali", "Niger", "Gambia"],
     answer: "Togo",
     explanation:
       "Togo is in Western Africa and borders Benin, Burkina Faso, and Ghana.",
@@ -3513,7 +3528,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Tonga?",
-    choices: ["Palikir", "Yaren", "Nuku'alofa", "Majuro"],
+    choices: ["Canberra", "Wellington", "Nuku'alofa", "Ngerulmud"],
     answer: "Nuku'alofa",
     explanation: "Nuku'alofa is the capital city of Tonga.",
   },
@@ -3522,7 +3537,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Polynesia has Nuku'alofa as its capital?",
-    choices: ["Tuvalu", "Vanuatu", "Australia", "Tonga"],
+    choices: ["Tuvalu", "Samoa", "Nauru", "Tonga"],
     answer: "Tonga",
     explanation:
       "Tonga is part of Polynesia, and Nuku'alofa is its capital city.",
@@ -3532,7 +3547,12 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Port of Spain is the capital of which country?",
-    choices: ["Cuba", "Trinidad and Tobago", "Bahamas", "Barbados"],
+    choices: [
+      "Saint Kitts and Nevis",
+      "Trinidad and Tobago",
+      "Antigua and Barbuda",
+      "Dominican Republic",
+    ],
     answer: "Trinidad and Tobago",
     explanation: "Port of Spain is the capital city of Trinidad and Tobago.",
   },
@@ -3541,7 +3561,12 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Caribbean has Port of Spain as its capital?",
-    choices: ["Dominica", "Dominican Republic", "Trinidad and Tobago", "Cuba"],
+    choices: [
+      "Dominican Republic",
+      "Saint Kitts and Nevis",
+      "Trinidad and Tobago",
+      "Antigua and Barbuda",
+    ],
     answer: "Trinidad and Tobago",
     explanation:
       "Trinidad and Tobago is part of Caribbean, and Port of Spain is its capital city.",
@@ -3551,7 +3576,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Tunisia?",
-    choices: ["Cairo", "Tripoli", "Tunis", "Algiers"],
+    choices: ["Algiers", "Cairo", "Tunis", "Tripoli"],
     answer: "Tunis",
     explanation: "Tunis is the capital city of Tunisia.",
   },
@@ -3560,7 +3585,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Northern Africa has Tunis as its capital?",
-    choices: ["Libya", "Morocco", "Sudan", "Tunisia"],
+    choices: ["Algeria", "Libya", "Morocco", "Tunisia"],
     answer: "Tunisia",
     explanation:
       "Tunisia is part of Northern Africa, and Tunis is its capital city.",
@@ -3570,7 +3595,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Ankara is the capital of which country?",
-    choices: ["Israel", "Jordan", "Türkiye", "Iraq"],
+    choices: ["Bahrain", "Georgia", "Türkiye", "Armenia"],
     answer: "Türkiye",
     explanation: "Ankara is the capital city of Türkiye.",
   },
@@ -3579,7 +3604,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia borders Greece, Iran, and Iraq?",
-    choices: ["Qatar", "Saudi Arabia", "Syria", "Türkiye"],
+    choices: ["Armenia", "Bahrain", "Georgia", "Türkiye"],
     answer: "Türkiye",
     explanation:
       "Türkiye is in Western Asia and borders Greece, Iran, and Iraq.",
@@ -3589,7 +3614,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Turkmenistan?",
-    choices: ["Tashkent", "Ashgabat", "Bishkek", "Dushanbe"],
+    choices: ["Dushanbe", "Ashgabat", "Astana", "Tashkent"],
     answer: "Ashgabat",
     explanation: "Ashgabat is the capital city of Turkmenistan.",
   },
@@ -3599,7 +3624,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Central Asia borders Iran, Kazakhstan, and Uzbekistan?",
-    choices: ["Kyrgyzstan", "Tajikistan", "Turkmenistan", "Kazakhstan"],
+    choices: ["Kyrgyzstan", "Kazakhstan", "Turkmenistan", "Tajikistan"],
     answer: "Turkmenistan",
     explanation:
       "Turkmenistan is in Central Asia and borders Iran, Kazakhstan, and Uzbekistan.",
@@ -3609,7 +3634,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Funafuti is the capital of which country?",
-    choices: ["Micronesia", "Nauru", "Tuvalu", "Marshall Islands"],
+    choices: ["Nauru", "Palau", "Tuvalu", "Tonga"],
     answer: "Tuvalu",
     explanation: "Funafuti is the capital city of Tuvalu.",
   },
@@ -3618,7 +3643,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Polynesia has Funafuti as its capital?",
-    choices: ["Tonga", "Vanuatu", "Australia", "Tuvalu"],
+    choices: ["Tonga", "Nauru", "Palau", "Tuvalu"],
     answer: "Tuvalu",
     explanation:
       "Tuvalu is part of Polynesia, and Funafuti is its capital city.",
@@ -3628,7 +3653,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Uganda?",
-    choices: ["Kampala", "Antananarivo", "Lilongwe", "Port Louis"],
+    choices: ["Kampala", "Kigali", "Asmara", "Dodoma"],
     answer: "Kampala",
     explanation: "Kampala is the capital city of Uganda.",
   },
@@ -3638,7 +3663,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Tanzania, DR Congo, and Kenya?",
-    choices: ["Zimbabwe", "Uganda", "Tanzania", "Zambia"],
+    choices: ["Eritrea", "Uganda", "Rwanda", "Zambia"],
     answer: "Uganda",
     explanation:
       "Uganda is in Eastern Africa and borders Tanzania, DR Congo, and Kenya.",
@@ -3658,7 +3683,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Europe borders Poland, Romania, and Russia?",
-    choices: ["Russia", "Belarus", "Ukraine", "Moldova"],
+    choices: ["Moldova", "Russia", "Ukraine", "Belarus"],
     answer: "Ukraine",
     explanation:
       "Ukraine is in Eastern Europe and borders Poland, Romania, and Russia.",
@@ -3668,7 +3693,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of United Arab Emirates?",
-    choices: ["Jerusalem", "Amman", "Abu Dhabi", "Baghdad"],
+    choices: ["Amman", "Kuwait City", "Abu Dhabi", "Ankara"],
     answer: "Abu Dhabi",
     explanation: "Abu Dhabi is the capital city of United Arab Emirates.",
   },
@@ -3677,7 +3702,12 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia has Abu Dhabi as its capital?",
-    choices: ["Bahrain", "Georgia", "Iraq", "United Arab Emirates"],
+    choices: [
+      "Saudi Arabia",
+      "Azerbaijan",
+      "Palestine",
+      "United Arab Emirates",
+    ],
     answer: "United Arab Emirates",
     explanation:
       "United Arab Emirates is part of Western Asia, and Abu Dhabi is its capital city.",
@@ -3687,7 +3717,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "London is the capital of which country?",
-    choices: ["Ireland", "United Kingdom", "Finland", "Iceland"],
+    choices: ["Estonia", "United Kingdom", "Lithuania", "Denmark"],
     answer: "United Kingdom",
     explanation: "London is the capital city of United Kingdom.",
   },
@@ -3697,7 +3727,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Northern Europe borders only Ireland and has London as its capital?",
-    choices: ["United Kingdom", "Ireland", "Latvia", "Lithuania"],
+    choices: ["United Kingdom", "Lithuania", "Denmark", "Estonia"],
     answer: "United Kingdom",
     explanation:
       "United Kingdom is in Northern Europe, borders only Ireland, and has London as its capital.",
@@ -3707,7 +3737,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of United States?",
-    choices: ["Ottawa", "Mexico City", "Washington D.C."],
+    choices: ["Mexico City", "Ottawa", "Washington D.C."],
     answer: "Washington D.C.",
     explanation: "Washington D.C. is the capital city of United States.",
   },
@@ -3727,7 +3757,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Montevideo is the capital of which country?",
-    choices: ["Colombia", "Ecuador", "Uruguay", "Chile"],
+    choices: ["Bolivia", "Ecuador", "Uruguay", "Paraguay"],
     answer: "Uruguay",
     explanation: "Montevideo is the capital city of Uruguay.",
   },
@@ -3736,7 +3766,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in South America has Montevideo as its capital?",
-    choices: ["Paraguay", "Peru", "Suriname", "Uruguay"],
+    choices: ["Paraguay", "Bolivia", "Ecuador", "Uruguay"],
     answer: "Uruguay",
     explanation:
       "Uruguay is part of South America, and Montevideo is its capital city.",
@@ -3746,7 +3776,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Uzbekistan?",
-    choices: ["Ashgabat", "Astana", "Bishkek", "Tashkent"],
+    choices: ["Ashgabat", "Dushanbe", "Bishkek", "Tashkent"],
     answer: "Tashkent",
     explanation: "Tashkent is the capital city of Uzbekistan.",
   },
@@ -3766,7 +3796,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Port Vila is the capital of which country?",
-    choices: ["Solomon Islands", "Fiji", "Vanuatu", "Papua New Guinea"],
+    choices: ["Solomon Islands", "Papua New Guinea", "Vanuatu", "Fiji"],
     answer: "Vanuatu",
     explanation: "Port Vila is the capital city of Vanuatu.",
   },
@@ -3775,7 +3805,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Melanesia has Port Vila as its capital?",
-    choices: ["Fiji", "Papua New Guinea", "Solomon Islands", "Vanuatu"],
+    choices: ["Fiji", "Solomon Islands", "Papua New Guinea", "Vanuatu"],
     answer: "Vanuatu",
     explanation:
       "Vanuatu is part of Melanesia, and Port Vila is its capital city.",
@@ -3785,7 +3815,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Vatican City?",
-    choices: ["Lisbon", "City of San Marino", "Vatican City", "Valletta"],
+    choices: ["Andorra la Vella", "Nicosia", "Vatican City", "Valletta"],
     answer: "Vatican City",
     explanation: "Vatican City is the capital city of Vatican City.",
   },
@@ -3795,7 +3825,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which landlocked country in Southern Europe has Vatican City as its capital?",
-    choices: ["Malta", "Portugal", "Vatican City", "Italy"],
+    choices: ["Greece", "Italy", "Vatican City", "Cyprus"],
     answer: "Vatican City",
     explanation:
       "Vatican City is a landlocked country in Southern Europe, and its capital is Vatican City.",
@@ -3805,7 +3835,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Caracas is the capital of which country?",
-    choices: ["Venezuela", "Guyana", "Paraguay", "Peru"],
+    choices: ["Venezuela", "Argentina", "Colombia", "Bolivia"],
     answer: "Venezuela",
     explanation: "Caracas is the capital city of Venezuela.",
   },
@@ -3815,7 +3845,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South America borders Brazil, Colombia, and Guyana?",
-    choices: ["Suriname", "Venezuela", "Paraguay", "Peru"],
+    choices: ["Paraguay", "Venezuela", "Argentina", "Bolivia"],
     answer: "Venezuela",
     explanation:
       "Venezuela is in South America and borders Brazil, Colombia, and Guyana.",
@@ -3825,7 +3855,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Vietnam?",
-    choices: ["Phnom Penh", "Hanoi", "Dili", "Bandar Seri Begawan"],
+    choices: ["Bangkok", "Hanoi", "Dili", "Manila"],
     answer: "Hanoi",
     explanation: "Hanoi is the capital city of Vietnam.",
   },
@@ -3835,7 +3865,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in South-Eastern Asia borders Laos, Cambodia, and China?",
-    choices: ["Timor-Leste", "Brunei", "Vietnam", "Thailand"],
+    choices: ["Brunei", "Malaysia", "Vietnam", "Myanmar"],
     answer: "Vietnam",
     explanation:
       "Vietnam is in South-Eastern Asia and borders Laos, Cambodia, and China.",
@@ -3845,7 +3875,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Sana'a is the capital of which country?",
-    choices: ["Yemen", "Palestine", "Qatar", "Saudi Arabia"],
+    choices: ["Yemen", "Jordan", "Oman", "Bahrain"],
     answer: "Yemen",
     explanation: "Sana'a is the capital city of Yemen.",
   },
@@ -3854,7 +3884,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "hard",
     prompt: "Which country in Western Asia has Sana'a as its capital?",
-    choices: ["Palestine", "Yemen", "Lebanon", "Oman"],
+    choices: ["Bahrain", "Yemen", "Jordan", "Oman"],
     answer: "Yemen",
     explanation:
       "Yemen is part of Western Asia, and Sana'a is its capital city.",
@@ -3864,7 +3894,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "What is the capital of Zambia?",
-    choices: ["Lusaka", "Kigali", "Victoria", "Mogadishu"],
+    choices: ["Lusaka", "Lilongwe", "Asmara", "Dodoma"],
     answer: "Lusaka",
     explanation: "Lusaka is the capital city of Zambia.",
   },
@@ -3874,7 +3904,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders DR Congo, Malawi, and Mozambique?",
-    choices: ["Eritrea", "Zambia", "Comoros", "Djibouti"],
+    choices: ["Ethiopia", "Zambia", "Zimbabwe", "Somalia"],
     answer: "Zambia",
     explanation:
       "Zambia is in Eastern Africa and borders DR Congo, Malawi, and Mozambique.",
@@ -3884,7 +3914,7 @@ export const generatedQuestionBank = [
     category: "world-countries",
     difficulty: "medium",
     prompt: "Harare is the capital of which country?",
-    choices: ["Malawi", "Mauritius", "Mozambique", "Zimbabwe"],
+    choices: ["Zambia", "Djibouti", "Ethiopia", "Zimbabwe"],
     answer: "Zimbabwe",
     explanation: "Harare is the capital city of Zimbabwe.",
   },
@@ -3894,7 +3924,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which country in Eastern Africa borders Zambia, Botswana, and Mozambique?",
-    choices: ["Zimbabwe", "Uganda", "Zambia", "Burundi"],
+    choices: ["Zimbabwe", "Djibouti", "Ethiopia", "Tanzania"],
     answer: "Zimbabwe",
     explanation:
       "Zimbabwe is in Eastern Africa and borders Zambia, Botswana, and Mozambique.",
@@ -3905,7 +3935,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Uganda, South Sudan, and Sudan and empties into the Mediterranean Sea?",
-    choices: ["Congo", "Nile", "Niger", "Zambezi"],
+    choices: ["Zambezi", "Nile", "Congo", "Niger"],
     answer: "Nile",
     explanation:
       "Nile flows through Uganda, South Sudan, Sudan, and Egypt and empties into the Mediterranean Sea.",
@@ -3916,7 +3946,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with ancient Egyptian civilization and the cities of Khartoum and Cairo?",
-    choices: ["Zambezi", "Congo", "Niger", "Nile"],
+    choices: ["Congo", "Niger", "Zambezi", "Nile"],
     answer: "Nile",
     explanation:
       "Nile is strongly associated with ancient Egyptian civilization and the cities of Khartoum and Cairo.",
@@ -3927,7 +3957,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Peru, Colombia, and Brazil and empties into the Atlantic Ocean?",
-    choices: ["Orinoco", "Parana", "Amazon"],
+    choices: ["Parana", "Orinoco", "Amazon"],
     answer: "Amazon",
     explanation:
       "Amazon flows through Peru, Colombia, and Brazil and empties into the Atlantic Ocean.",
@@ -3947,7 +3977,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through China and empties into the East China Sea?",
-    choices: ["Yangtze", "Lena", "Ob", "Yenisei"],
+    choices: ["Yangtze", "Mekong", "Ganges", "Brahmaputra"],
     answer: "Yangtze",
     explanation:
       "Yangtze flows through China and empties into the East China Sea.",
@@ -3958,7 +3988,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with the Three Gorges region and the cities of Wuhan, Nanjing, and Shanghai?",
-    choices: ["Yangtze", "Jordan", "Mekong", "Ganges"],
+    choices: ["Yangtze", "Mekong", "Ganges", "Brahmaputra"],
     answer: "Yangtze",
     explanation:
       "Yangtze is strongly associated with the Three Gorges region and the cities of Wuhan, Nanjing, and Shanghai.",
@@ -3969,7 +3999,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through United States and empties into the Gulf of Mexico?",
-    choices: ["Colorado", "Mississippi", "St. Lawrence", "Missouri"],
+    choices: ["Rio Grande", "Mississippi", "Missouri", "Colorado"],
     answer: "Mississippi",
     explanation:
       "Mississippi flows through United States and empties into the Gulf of Mexico.",
@@ -3980,9 +4010,9 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt: "The Mississippi eventually empties into which body of water?",
     choices: [
+      "Mississippi River",
       "Gulf of California",
       "Bering Sea",
-      "Atlantic Ocean",
       "Gulf of Mexico",
     ],
     answer: "Gulf of Mexico",
@@ -3994,7 +4024,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through United States and empties into the Mississippi River?",
-    choices: ["Yukon", "St. Lawrence", "Missouri", "Rio Grande"],
+    choices: ["Colorado", "Rio Grande", "Missouri", "Mississippi"],
     answer: "Missouri",
     explanation:
       "Missouri flows through United States and empties into the Mississippi River.",
@@ -4005,7 +4035,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with the longest river in the United States by many standard measurements?",
-    choices: ["Missouri", "Yukon", "St. Lawrence", "Mississippi"],
+    choices: ["Missouri", "Mississippi", "Colorado", "Rio Grande"],
     answer: "Missouri",
     explanation:
       "Missouri is strongly associated with the longest river in the United States by many standard measurements.",
@@ -4016,7 +4046,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Germany, Austria, and Hungary and empties into the Black Sea?",
-    choices: ["Dnieper", "Don", "Rhine", "Danube"],
+    choices: ["Rhine", "Volga", "Seine", "Danube"],
     answer: "Danube",
     explanation:
       "Danube flows through Germany, Austria, Hungary, Serbia, and Romania and empties into the Black Sea.",
@@ -4026,7 +4056,7 @@ export const generatedQuestionBank = [
     category: "major-rivers",
     difficulty: "medium",
     prompt: "The Danube eventually empties into which body of water?",
-    choices: ["Adriatic Sea", "Bay of Biscay", "North Sea", "Black Sea"],
+    choices: ["North Sea", "Caspian Sea", "English Channel", "Black Sea"],
     answer: "Black Sea",
     explanation: "Danube empties into the Black Sea.",
   },
@@ -4036,7 +4066,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Switzerland, Germany, and France and empties into the North Sea?",
-    choices: ["Rhine", "Volga", "Seine", "Thames"],
+    choices: ["Rhine", "Danube", "Volga", "Seine"],
     answer: "Rhine",
     explanation:
       "Rhine flows through Switzerland, Germany, France, and Netherlands and empties into the North Sea.",
@@ -4047,7 +4077,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with western Europe's industrial corridor and the port of Rotterdam?",
-    choices: ["Rhine", "Don", "Danube", "Volga"],
+    choices: ["Rhine", "Danube", "Volga", "Seine"],
     answer: "Rhine",
     explanation:
       "Rhine is strongly associated with western Europe's industrial corridor and the port of Rotterdam.",
@@ -4058,7 +4088,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through China, Myanmar, and Laos and empties into the South China Sea?",
-    choices: ["Tigris", "Euphrates", "Lena", "Mekong"],
+    choices: ["Yangtze", "Ganges", "Brahmaputra", "Mekong"],
     answer: "Mekong",
     explanation:
       "Mekong flows through China, Myanmar, Laos, Thailand, Cambodia, and Vietnam and empties into the South China Sea.",
@@ -4069,7 +4099,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt: "The Mekong eventually empties into which body of water?",
     choices: [
-      "Bay of Bengal",
+      "East China Sea",
       "Bay of Bengal",
       "Arabian Sea",
       "South China Sea",
@@ -4094,7 +4124,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with Varanasi and the sacred river traditions of northern India?",
-    choices: ["Amur", "Jordan", "Yangtze", "Ganges"],
+    choices: ["Yangtze", "Mekong", "Brahmaputra", "Ganges"],
     answer: "Ganges",
     explanation:
       "Ganges is strongly associated with Varanasi and the sacred river traditions of northern India.",
@@ -4105,7 +4135,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through China, India, and Bangladesh and empties into the Bay of Bengal?",
-    choices: ["Mekong", "Brahmaputra", "Jordan", "Yangtze"],
+    choices: ["Ganges", "Brahmaputra", "Yangtze", "Mekong"],
     answer: "Brahmaputra",
     explanation:
       "Brahmaputra flows through China, India, and Bangladesh and empties into the Bay of Bengal.",
@@ -4115,7 +4145,12 @@ export const generatedQuestionBank = [
     category: "major-rivers",
     difficulty: "medium",
     prompt: "The Brahmaputra eventually empties into which body of water?",
-    choices: ["Dead Sea", "East China Sea", "South China Sea", "Bay of Bengal"],
+    choices: [
+      "East China Sea",
+      "South China Sea",
+      "Arabian Sea",
+      "Bay of Bengal",
+    ],
     answer: "Bay of Bengal",
     explanation: "Brahmaputra empties into the Bay of Bengal.",
   },
@@ -4125,7 +4160,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through China, India, and Pakistan and empties into the Arabian Sea?",
-    choices: ["Euphrates", "Lena", "Indus", "Tigris"],
+    choices: ["Mekong", "Ganges", "Indus", "Yangtze"],
     answer: "Indus",
     explanation:
       "Indus flows through China, India, and Pakistan and empties into the Arabian Sea.",
@@ -4136,7 +4171,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with the Indus Valley civilization and modern Pakistan?",
-    choices: ["Yenisei", "Amur", "Indus", "Ob"],
+    choices: ["Mekong", "Ganges", "Indus", "Yangtze"],
     answer: "Indus",
     explanation:
       "Indus is strongly associated with the Indus Valley civilization and modern Pakistan.",
@@ -4147,7 +4182,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Democratic Republic of the Congo, Republic of the Congo, and Angola and empties into the Atlantic Ocean?",
-    choices: ["Congo", "Niger", "Zambezi", "Nile"],
+    choices: ["Congo", "Nile", "Niger", "Zambezi"],
     answer: "Congo",
     explanation:
       "Congo flows through Democratic Republic of the Congo, Republic of the Congo, and Angola and empties into the Atlantic Ocean.",
@@ -4183,7 +4218,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with West Africa and the inland delta near Timbuktu?",
-    choices: ["Congo", "Zambezi", "Nile", "Niger"],
+    choices: ["Nile", "Congo", "Zambezi", "Niger"],
     answer: "Niger",
     explanation:
       "Niger is strongly associated with West Africa and the inland delta near Timbuktu.",
@@ -4194,7 +4229,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Russia and empties into the Caspian Sea?",
-    choices: ["Thames", "Volga", "Rhine", "Seine"],
+    choices: ["Seine", "Volga", "Danube", "Rhine"],
     answer: "Volga",
     explanation: "Volga flows through Russia and empties into the Caspian Sea.",
   },
@@ -4203,7 +4238,7 @@ export const generatedQuestionBank = [
     category: "major-rivers",
     difficulty: "medium",
     prompt: "The Volga eventually empties into which body of water?",
-    choices: ["North Sea", "Adriatic Sea", "Bay of Biscay", "Caspian Sea"],
+    choices: ["Black Sea", "North Sea", "English Channel", "Caspian Sea"],
     answer: "Caspian Sea",
     explanation: "Volga empties into the Caspian Sea.",
   },
@@ -4213,7 +4248,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Turkey and Iraq and empties into the Shatt al-Arab?",
-    choices: ["Jordan", "Tigris", "Yenisei", "Amur"],
+    choices: ["Ganges", "Tigris", "Yangtze", "Mekong"],
     answer: "Tigris",
     explanation:
       "Tigris flows through Turkey and Iraq and empties into the Shatt al-Arab.",
@@ -4224,7 +4259,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with Mesopotamia and the city of Baghdad?",
-    choices: ["Lena", "Ob", "Yenisei", "Tigris"],
+    choices: ["Yangtze", "Mekong", "Ganges", "Tigris"],
     answer: "Tigris",
     explanation:
       "Tigris is strongly associated with Mesopotamia and the city of Baghdad.",
@@ -4235,7 +4270,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Turkey, Syria, and Iraq and empties into the Shatt al-Arab?",
-    choices: ["Euphrates", "Yenisei", "Amur", "Jordan"],
+    choices: ["Euphrates", "Yangtze", "Mekong", "Ganges"],
     answer: "Euphrates",
     explanation:
       "Euphrates flows through Turkey, Syria, and Iraq and empties into the Shatt al-Arab.",
@@ -4259,7 +4294,7 @@ export const generatedQuestionBank = [
     category: "major-rivers",
     difficulty: "medium",
     prompt: "Which river flows through Russia and empties into the Laptev Sea?",
-    choices: ["Jordan", "Lena", "Yenisei", "Amur"],
+    choices: ["Ganges", "Lena", "Yangtze", "Mekong"],
     answer: "Lena",
     explanation: "Lena flows through Russia and empties into the Laptev Sea.",
   },
@@ -4269,7 +4304,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with eastern Siberia and one of the great Arctic-draining rivers?",
-    choices: ["Tigris", "Euphrates", "Ob", "Lena"],
+    choices: ["Yangtze", "Mekong", "Ganges", "Lena"],
     answer: "Lena",
     explanation:
       "Lena is strongly associated with eastern Siberia and one of the great Arctic-draining rivers.",
@@ -4280,7 +4315,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Russia and Kazakhstan and empties into the Kara Sea?",
-    choices: ["Ob", "Brahmaputra", "Indus", "Tigris"],
+    choices: ["Ob", "Yangtze", "Mekong", "Ganges"],
     answer: "Ob",
     explanation:
       "Ob flows through Russia and Kazakhstan and empties into the Kara Sea.",
@@ -4290,7 +4325,7 @@ export const generatedQuestionBank = [
     category: "major-rivers",
     difficulty: "medium",
     prompt: "The Ob eventually empties into which body of water?",
-    choices: ["Kara Sea", "South China Sea", "Bay of Bengal", "Bay of Bengal"],
+    choices: ["Kara Sea", "East China Sea", "South China Sea", "Bay of Bengal"],
     answer: "Kara Sea",
     explanation: "Ob empties into the Kara Sea.",
   },
@@ -4300,7 +4335,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Mongolia and Russia and empties into the Kara Sea?",
-    choices: ["Ganges", "Brahmaputra", "Indus", "Yenisei"],
+    choices: ["Yangtze", "Mekong", "Ganges", "Yenisei"],
     answer: "Yenisei",
     explanation:
       "Yenisei flows through Mongolia and Russia and empties into the Kara Sea.",
@@ -4311,7 +4346,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with central Siberia and one of the largest river systems flowing to the Arctic?",
-    choices: ["Euphrates", "Lena", "Ob", "Yenisei"],
+    choices: ["Yangtze", "Mekong", "Ganges", "Yenisei"],
     answer: "Yenisei",
     explanation:
       "Yenisei is strongly associated with central Siberia and one of the largest river systems flowing to the Arctic.",
@@ -4322,7 +4357,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Russia and China and empties into the Sea of Okhotsk?",
-    choices: ["Yenisei", "Jordan", "Yangtze", "Amur"],
+    choices: ["Yangtze", "Mekong", "Ganges", "Amur"],
     answer: "Amur",
     explanation:
       "Amur flows through Russia and China and empties into the Sea of Okhotsk.",
@@ -4333,9 +4368,9 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt: "The Amur eventually empties into which body of water?",
     choices: [
-      "Dead Sea",
       "East China Sea",
       "South China Sea",
+      "Bay of Bengal",
       "Sea of Okhotsk",
     ],
     answer: "Sea of Okhotsk",
@@ -4358,7 +4393,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with the basin that includes Itaipu Dam and much of southern South America?",
-    choices: ["Amazon", "Parana", "Orinoco"],
+    choices: ["Orinoco", "Parana", "Amazon"],
     answer: "Parana",
     explanation:
       "Parana is strongly associated with the basin that includes Itaipu Dam and much of southern South America.",
@@ -4389,7 +4424,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Zambia, Angola, and Namibia and empties into the Indian Ocean?",
-    choices: ["Nile", "Zambezi", "Congo", "Niger"],
+    choices: ["Niger", "Zambezi", "Nile", "Congo"],
     answer: "Zambezi",
     explanation:
       "Zambezi flows through Zambia, Angola, Namibia, Botswana, Zimbabwe, and Mozambique and empties into the Indian Ocean.",
@@ -4400,7 +4435,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with Victoria Falls in southern Africa?",
-    choices: ["Congo", "Zambezi", "Niger", "Nile"],
+    choices: ["Niger", "Zambezi", "Nile", "Congo"],
     answer: "Zambezi",
     explanation:
       "Zambezi is strongly associated with Victoria Falls in southern Africa.",
@@ -4431,7 +4466,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Israel, Jordan, and Palestine and empties into the Dead Sea?",
-    choices: ["Jordan", "Indus", "Tigris", "Euphrates"],
+    choices: ["Jordan", "Yangtze", "Mekong", "Ganges"],
     answer: "Jordan",
     explanation:
       "Jordan flows through Israel, Jordan, and Palestine and empties into the Dead Sea.",
@@ -4442,7 +4477,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with the boundary region around the Sea of Galilee and the Dead Sea?",
-    choices: ["Brahmaputra", "Indus", "Jordan", "Ganges"],
+    choices: ["Mekong", "Ganges", "Jordan", "Yangtze"],
     answer: "Jordan",
     explanation:
       "Jordan is strongly associated with the boundary region around the Sea of Galilee and the Dead Sea.",
@@ -4453,7 +4488,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through United States and Mexico and empties into the Gulf of California?",
-    choices: ["Colorado", "Rio Grande", "Yukon", "St. Lawrence"],
+    choices: ["Colorado", "Mississippi", "Missouri", "Rio Grande"],
     answer: "Colorado",
     explanation:
       "Colorado flows through United States and Mexico and empties into the Gulf of California.",
@@ -4466,8 +4501,8 @@ export const generatedQuestionBank = [
     choices: [
       "Gulf of California",
       "Gulf of Mexico",
+      "Mississippi River",
       "Bering Sea",
-      "Atlantic Ocean",
     ],
     answer: "Gulf of California",
     explanation: "Colorado empties into the Gulf of California.",
@@ -4478,7 +4513,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through United States and Mexico and empties into the Gulf of Mexico?",
-    choices: ["St. Lawrence", "Mississippi", "Rio Grande", "Yukon"],
+    choices: ["Missouri", "Colorado", "Rio Grande", "Mississippi"],
     answer: "Rio Grande",
     explanation:
       "Rio Grande flows through United States and Mexico and empties into the Gulf of Mexico.",
@@ -4489,7 +4524,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with a major stretch of the U.S.-Mexico border?",
-    choices: ["Rio Grande", "Colorado", "Yukon", "St. Lawrence"],
+    choices: ["Rio Grande", "Mississippi", "Missouri", "Colorado"],
     answer: "Rio Grande",
     explanation:
       "Rio Grande is strongly associated with a major stretch of the U.S.-Mexico border.",
@@ -4500,7 +4535,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Canada and United States and empties into the Bering Sea?",
-    choices: ["Yukon", "Missouri", "Colorado", "Rio Grande"],
+    choices: ["Yukon", "Mississippi", "Missouri", "Colorado"],
     answer: "Yukon",
     explanation:
       "Yukon flows through Canada and United States and empties into the Bering Sea.",
@@ -4511,10 +4546,10 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt: "The Yukon eventually empties into which body of water?",
     choices: [
-      "Gulf of Mexico",
-      "Atlantic Ocean",
-      "Bering Sea",
+      "Mississippi River",
       "Gulf of California",
+      "Bering Sea",
+      "Gulf of Mexico",
     ],
     answer: "Bering Sea",
     explanation: "Yukon empties into the Bering Sea.",
@@ -4525,7 +4560,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Canada and United States and empties into the Atlantic Ocean?",
-    choices: ["Yukon", "Mississippi", "Missouri", "St. Lawrence"],
+    choices: ["Mississippi", "Missouri", "Colorado", "St. Lawrence"],
     answer: "St. Lawrence",
     explanation:
       "St. Lawrence flows through Canada and United States and empties into the Atlantic Ocean.",
@@ -4536,7 +4571,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with the Great Lakes outlet and Montreal?",
-    choices: ["Rio Grande", "St. Lawrence", "Missouri", "Colorado"],
+    choices: ["Colorado", "St. Lawrence", "Mississippi", "Missouri"],
     answer: "St. Lawrence",
     explanation:
       "St. Lawrence is strongly associated with the Great Lakes outlet and Montreal.",
@@ -4557,7 +4592,7 @@ export const generatedQuestionBank = [
     category: "major-rivers",
     difficulty: "medium",
     prompt: "The Seine eventually empties into which body of water?",
-    choices: ["Caspian Sea", "North Sea", "Adriatic Sea", "English Channel"],
+    choices: ["Black Sea", "North Sea", "Caspian Sea", "English Channel"],
     answer: "English Channel",
     explanation: "Seine empties into the English Channel.",
   },
@@ -4577,7 +4612,7 @@ export const generatedQuestionBank = [
     category: "major-rivers",
     difficulty: "hard",
     prompt: "Which river is most associated with London and southern England?",
-    choices: ["Dnieper", "Don", "Danube", "Thames"],
+    choices: ["Danube", "Rhine", "Volga", "Thames"],
     answer: "Thames",
     explanation:
       "Thames is strongly associated with London and southern England.",
@@ -4588,7 +4623,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Italy and empties into the Adriatic Sea?",
-    choices: ["Thames", "Po", "Volga", "Seine"],
+    choices: ["Volga", "Po", "Danube", "Rhine"],
     answer: "Po",
     explanation: "Po flows through Italy and empties into the Adriatic Sea.",
   },
@@ -4597,7 +4632,7 @@ export const generatedQuestionBank = [
     category: "major-rivers",
     difficulty: "medium",
     prompt: "The Po eventually empties into which body of water?",
-    choices: ["English Channel", "Adriatic Sea", "North Sea", "Caspian Sea"],
+    choices: ["Caspian Sea", "Adriatic Sea", "Black Sea", "North Sea"],
     answer: "Adriatic Sea",
     explanation: "Po empties into the Adriatic Sea.",
   },
@@ -4607,7 +4642,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through France and empties into the Bay of Biscay?",
-    choices: ["Loire", "Elbe", "Dnieper", "Don"],
+    choices: ["Loire", "Danube", "Rhine", "Volga"],
     answer: "Loire",
     explanation:
       "Loire flows through France and empties into the Bay of Biscay.",
@@ -4618,7 +4653,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with the famous chateaux of central France?",
-    choices: ["Loire", "Thames", "Po", "Elbe"],
+    choices: ["Loire", "Danube", "Rhine", "Volga"],
     answer: "Loire",
     explanation:
       "Loire is strongly associated with the famous chateaux of central France.",
@@ -4639,7 +4674,7 @@ export const generatedQuestionBank = [
     category: "major-rivers",
     difficulty: "medium",
     prompt: "The Elbe eventually empties into which body of water?",
-    choices: ["Black Sea", "Caspian Sea", "North Sea", "Sea of Azov"],
+    choices: ["Caspian Sea", "English Channel", "North Sea", "Black Sea"],
     answer: "North Sea",
     explanation: "Elbe empties into the North Sea.",
   },
@@ -4649,7 +4684,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Russia, Belarus, and Ukraine and empties into the Black Sea?",
-    choices: ["Danube", "Dnieper", "Elbe", "Don"],
+    choices: ["Volga", "Dnieper", "Danube", "Rhine"],
     answer: "Dnieper",
     explanation:
       "Dnieper flows through Russia, Belarus, and Ukraine and empties into the Black Sea.",
@@ -4660,7 +4695,7 @@ export const generatedQuestionBank = [
     difficulty: "hard",
     prompt:
       "Which river is most associated with Kyiv and eastern Europe's steppe corridor?",
-    choices: ["Elbe", "Dnieper", "Po", "Loire"],
+    choices: ["Volga", "Dnieper", "Danube", "Rhine"],
     answer: "Dnieper",
     explanation:
       "Dnieper is strongly associated with Kyiv and eastern Europe's steppe corridor.",
@@ -4671,7 +4706,7 @@ export const generatedQuestionBank = [
     difficulty: "medium",
     prompt:
       "Which river flows through Russia and empties into the Sea of Azov?",
-    choices: ["Don", "Dnieper", "Danube", "Rhine"],
+    choices: ["Don", "Danube", "Rhine", "Volga"],
     answer: "Don",
     explanation: "Don flows through Russia and empties into the Sea of Azov.",
   },
@@ -4680,7 +4715,7 @@ export const generatedQuestionBank = [
     category: "major-rivers",
     difficulty: "medium",
     prompt: "The Don eventually empties into which body of water?",
-    choices: ["Bay of Biscay", "North Sea", "Sea of Azov", "Adriatic Sea"],
+    choices: ["North Sea", "Caspian Sea", "Sea of Azov", "Black Sea"],
     answer: "Sea of Azov",
     explanation: "Don empties into the Sea of Azov.",
   },

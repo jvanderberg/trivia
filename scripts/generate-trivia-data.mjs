@@ -47,6 +47,7 @@ const statePool = us.STATES.filter(
     capital: state.capital,
     statehoodYear: state.statehood_year,
     capitalTimeZone: state.capital_tz,
+    timeZones: state.time_zones,
   }))
   .sort((left, right) => left.name.localeCompare(right.name))
 
@@ -62,6 +63,7 @@ const presidentPool = presidents.map((president) => ({
   startYear: president.term.startYear,
   endYear: president.term.endYear,
   termsServed: president.term.served,
+  birthYear: president.life.birthYear,
 }))
 
 const riverPool = [
@@ -347,15 +349,213 @@ function rotatePool(items, seed) {
   return items.slice(shift).concat(items.slice(0, shift))
 }
 
-function pickDistractors(items, answer, count, seed) {
-  const filtered = items.filter((item) => item !== answer)
-  return rotatePool(filtered, seed).slice(0, count)
+function unique(items) {
+  return items.filter(
+    (item, index, allItems) => allItems.indexOf(item) === index,
+  )
 }
 
-function buildChoices(answer, distractorPool, seed) {
-  return rotatePool(
-    [answer, ...pickDistractors(distractorPool, answer, 3, seed)],
-    `${seed}-choices`,
+function pickDistractors(items, answer, count) {
+  const filtered = unique(items).filter((item) => item !== answer)
+  return filtered.slice(0, count)
+}
+
+function buildChoices(
+  answer,
+  distractorPool,
+  seed,
+  fallbackPool = distractorPool,
+) {
+  const distractors = pickDistractors(distractorPool, answer, 3)
+
+  if (distractors.length < 3) {
+    distractors.push(
+      ...pickDistractors(
+        fallbackPool.filter((item) => !distractors.includes(item)),
+        answer,
+        3 - distractors.length,
+      ),
+    )
+  }
+
+  return rotatePool([answer, ...distractors], `${seed}-choices`)
+}
+
+function commonPrefixLength(left, right) {
+  let index = 0
+  while (
+    index < left.length &&
+    index < right.length &&
+    left[index] === right[index]
+  ) {
+    index += 1
+  }
+
+  return index
+}
+
+function commonSuffixLength(left, right) {
+  let index = 0
+  while (
+    index < left.length &&
+    index < right.length &&
+    left.at(-(index + 1)) === right.at(-(index + 1))
+  ) {
+    index += 1
+  }
+
+  return index
+}
+
+function stringSimilarityScore(answer, candidate) {
+  const normalizedAnswer = answer.toLowerCase()
+  const normalizedCandidate = candidate.toLowerCase()
+  const answerWords = normalizedAnswer.split(/\s+/)
+  const candidateWords = normalizedCandidate.split(/\s+/)
+
+  return (
+    (normalizedAnswer[0] === normalizedCandidate[0] ? 8 : 0) +
+    (answerWords.length === candidateWords.length ? 4 : 0) +
+    Math.min(commonPrefixLength(normalizedAnswer, normalizedCandidate), 4) * 2 +
+    Math.min(commonSuffixLength(normalizedAnswer, normalizedCandidate), 4) * 2 -
+    Math.abs(normalizedAnswer.length - normalizedCandidate.length)
+  )
+}
+
+function rankByStringSimilarity(answer, items) {
+  return unique(items)
+    .filter((item) => item !== answer)
+    .sort((left, right) => {
+      const scoreDifference =
+        stringSimilarityScore(answer, right) -
+        stringSimilarityScore(answer, left)
+
+      if (scoreDifference !== 0) {
+        return scoreDifference
+      }
+
+      return left.localeCompare(right)
+    })
+}
+
+function rankByNumericDistance(items, answerValue, valueGetter) {
+  return [...items].sort((left, right) => {
+    const leftDistance = Math.abs(valueGetter(left) - answerValue)
+    const rightDistance = Math.abs(valueGetter(right) - answerValue)
+
+    if (leftDistance !== rightDistance) {
+      return leftDistance - rightDistance
+    }
+
+    return valueGetter(left) - valueGetter(right)
+  })
+}
+
+function buildRankedChoices(
+  answer,
+  primaryPool,
+  seed,
+  fallbackPool = primaryPool,
+) {
+  return buildChoices(answer, primaryPool, seed, fallbackPool)
+}
+
+function relatedStateEntries(state, matcher) {
+  return statePool.filter(
+    (entry) => entry.name !== state.name && matcher(entry),
+  )
+}
+
+function stateCapitalDistractors(state) {
+  const sameTimeZone = relatedStateEntries(
+    state,
+    (entry) => entry.capitalTimeZone === state.capitalTimeZone,
+  ).map((entry) => entry.capital)
+  const similarCapitals = rankByStringSimilarity(
+    state.capital,
+    statePool.map((entry) => entry.capital),
+  )
+
+  return unique([...sameTimeZone, ...similarCapitals])
+}
+
+function stateNameDistractors(state) {
+  const sameTimeZone = relatedStateEntries(
+    state,
+    (entry) => entry.capitalTimeZone === state.capitalTimeZone,
+  ).map((entry) => entry.name)
+  const similarNames = rankByStringSimilarity(
+    state.name,
+    statePool.map((entry) => entry.name),
+  )
+
+  return unique([...sameTimeZone, ...similarNames])
+}
+
+function stateAbbreviationDistractors(state) {
+  return statePool
+    .filter((entry) => entry.name !== state.name)
+    .sort((left, right) => {
+      const leftScore =
+        (left.abbreviation[0] === state.abbreviation[0] ? 8 : 0) +
+        (left.abbreviation[1] === state.abbreviation[1] ? 8 : 0) +
+        (left.name[0] === state.name[0] ? 4 : 0)
+      const rightScore =
+        (right.abbreviation[0] === state.abbreviation[0] ? 8 : 0) +
+        (right.abbreviation[1] === state.abbreviation[1] ? 8 : 0) +
+        (right.name[0] === state.name[0] ? 4 : 0)
+
+      if (leftScore !== rightScore) {
+        return rightScore - leftScore
+      }
+
+      return left.name.localeCompare(right.name)
+    })
+    .map((entry) => entry.abbreviation)
+}
+
+function statehoodDistractors(state) {
+  return rankByNumericDistance(
+    statePool.filter((entry) => entry.name !== state.name),
+    state.statehoodYear,
+    (entry) => entry.statehoodYear,
+  ).map((entry) => entry.name)
+}
+
+function presidentsNearOrder(president, span = 3) {
+  const nearby = presidentPool.filter(
+    (entry) =>
+      entry.name !== president.name &&
+      Math.abs(entry.order - president.order) <= span,
+  )
+
+  if (nearby.length >= 3) {
+    return nearby
+  }
+
+  return rankByNumericDistance(
+    presidentPool.filter((entry) => entry.name !== president.name),
+    president.order,
+    (entry) => entry.order,
+  )
+}
+
+function presidentsNearYears(president, span = 16) {
+  const nearby = presidentPool.filter(
+    (entry) =>
+      entry.name !== president.name &&
+      entry.startYear !== null &&
+      Math.abs(entry.startYear - president.startYear) <= span,
+  )
+
+  if (nearby.length >= 3) {
+    return nearby
+  }
+
+  return rankByNumericDistance(
+    presidentPool.filter((entry) => entry.name !== president.name),
+    president.startYear,
+    (entry) => entry.startYear,
   )
 }
 
@@ -383,13 +583,19 @@ function countriesInScope(country, scopeKey) {
 function buildCountryQuestions() {
   return countryPool.flatMap((country, index) => {
     const localPool = countriesInScope(country, "subregion")
-    const countryNames = localPool.map((entry) => entry.name)
-    const capitals = localPool
-      .map((entry) => entry.capital)
-      .filter(
-        (capital, capitalIndex, allCapitals) =>
-          allCapitals.indexOf(capital) === capitalIndex,
-      )
+    const countryNames = rankByStringSimilarity(
+      country.name,
+      localPool.map((entry) => entry.name),
+    )
+    const capitals = rankByStringSimilarity(
+      country.capital,
+      localPool
+        .map((entry) => entry.capital)
+        .filter(
+          (capital, capitalIndex, allCapitals) =>
+            allCapitals.indexOf(capital) === capitalIndex,
+        ),
+    )
 
     const borderNames = country.borders
       .map((code) => countriesByCode.get(code)?.name)
@@ -411,8 +617,18 @@ function buildCountryQuestions() {
             : `What is the capital of ${country.name}?`,
         choices:
           index % 2 === 0
-            ? buildChoices(country.name, countryNames, country.cca3)
-            : buildChoices(country.capital, capitals, country.cca3),
+            ? buildRankedChoices(
+                country.name,
+                countryNames,
+                country.cca3,
+                localPool.map((entry) => entry.name),
+              )
+            : buildRankedChoices(
+                country.capital,
+                capitals,
+                country.cca3,
+                localPool.map((entry) => entry.capital),
+              ),
         answer: index % 2 === 0 ? country.name : country.capital,
         explanation:
           index % 2 === 0
@@ -425,7 +641,10 @@ function buildCountryQuestions() {
 }
 
 function buildContextQuestion(country, localPool, borderNames) {
-  const countryNames = localPool.map((entry) => entry.name)
+  const countryNames = rankByStringSimilarity(
+    country.name,
+    localPool.map((entry) => entry.name),
+  )
   const contextualId = `world-country-context-${country.cca3.toLowerCase()}`
 
   if (borderNames.length >= 3) {
@@ -433,16 +652,20 @@ function buildContextQuestion(country, localPool, borderNames) {
       borderNames,
       `${country.cca3}-borders`,
     ).slice(0, 3)
+    const borderQuestionChoices = countryNames.filter(
+      (name) => !pickedBorders.includes(name),
+    )
 
     return {
       id: contextualId,
       category: "world-countries",
       difficulty: "hard",
       prompt: `Which country in ${country.subregion} borders ${chunkList(pickedBorders)}?`,
-      choices: buildChoices(
+      choices: buildRankedChoices(
         country.name,
-        countryNames,
+        borderQuestionChoices,
         `${country.cca3}-border-question`,
+        localPool.map((entry) => entry.name),
       ),
       answer: country.name,
       explanation: `${country.name} is in ${country.subregion} and borders ${chunkList(pickedBorders)}.`,
@@ -464,6 +687,7 @@ function buildContextQuestion(country, localPool, borderNames) {
         country.name,
         distractorPool.length >= 3 ? distractorPool : fallbackPool,
         `${country.cca3}-landlocked-question`,
+        fallbackPool,
       ),
       answer: country.name,
       explanation: `${country.name} is a landlocked country in ${country.subregion}, and its capital is ${country.capital}.`,
@@ -471,6 +695,10 @@ function buildContextQuestion(country, localPool, borderNames) {
   }
 
   if (borderNames.length === 1) {
+    const singleBorderChoices = countryNames.filter(
+      (name) => name !== borderNames[0],
+    )
+
     return {
       id: contextualId,
       category: "world-countries",
@@ -478,8 +706,9 @@ function buildContextQuestion(country, localPool, borderNames) {
       prompt: `Which country in ${country.subregion} borders only ${borderNames[0]} and has ${country.capital} as its capital?`,
       choices: buildChoices(
         country.name,
-        countryNames,
+        singleBorderChoices,
         `${country.cca3}-single-border-question`,
+        localPool.map((entry) => entry.name),
       ),
       answer: country.name,
       explanation: `${country.name} is in ${country.subregion}, borders only ${borderNames[0]}, and has ${country.capital} as its capital.`,
@@ -495,6 +724,7 @@ function buildContextQuestion(country, localPool, borderNames) {
       country.name,
       countryNames,
       `${country.cca3}-subregion-question`,
+      localPool.map((entry) => entry.name),
     ),
     answer: country.name,
     explanation: `${country.name} is part of ${country.subregion}, and ${country.capital} is its capital city.`,
@@ -563,8 +793,18 @@ function buildUsGeographyQuestions() {
             : `${state.capital} is the capital of which U.S. state?`,
         choices:
           index % 2 === 0
-            ? buildChoices(state.capital, capitals, `${state.name}-capital`)
-            : buildChoices(state.name, stateNames, `${state.name}-state`),
+            ? buildRankedChoices(
+                state.capital,
+                stateCapitalDistractors(state),
+                `${state.name}-capital`,
+                capitals,
+              )
+            : buildRankedChoices(
+                state.name,
+                stateNameDistractors(state),
+                `${state.name}-state`,
+                stateNames,
+              ),
         answer: index % 2 === 0 ? state.capital : state.name,
         explanation:
           index % 2 === 0
@@ -577,10 +817,11 @@ function buildUsGeographyQuestions() {
             category: "us-geography",
             difficulty: "hard",
             prompt: `Which state joined the Union in ${state.statehoodYear}?`,
-            choices: buildChoices(
+            choices: buildRankedChoices(
               state.name,
-              stateNames,
+              statehoodDistractors(state),
               `${state.name}-statehood`,
+              stateNames,
             ),
             answer: state.name,
             explanation: `${state.name} entered the Union in ${state.statehoodYear}.`,
@@ -591,10 +832,11 @@ function buildUsGeographyQuestions() {
               category: "us-geography",
               difficulty: "medium",
               prompt: `Which state uses the postal abbreviation ${state.abbreviation}?`,
-              choices: buildChoices(
+              choices: buildRankedChoices(
                 state.name,
-                stateNames,
+                stateNameDistractors(state),
                 `${state.name}-abbreviation-reverse`,
+                stateNames,
               ),
               answer: state.name,
               explanation: `${state.abbreviation} is the postal abbreviation for ${state.name}.`,
@@ -604,10 +846,11 @@ function buildUsGeographyQuestions() {
               category: "us-geography",
               difficulty: "medium",
               prompt: `What is the postal abbreviation for ${state.name}?`,
-              choices: buildChoices(
+              choices: buildRankedChoices(
                 state.abbreviation,
-                abbreviations,
+                stateAbbreviationDistractors(state),
                 `${state.name}-abbreviation`,
+                abbreviations,
               ),
               answer: state.abbreviation,
               explanation: `${state.abbreviation} is the postal abbreviation for ${state.name}.`,
@@ -617,20 +860,24 @@ function buildUsGeographyQuestions() {
 }
 
 function buildPresidentQuestions() {
-  const presidentNames = presidentPool.map((president) => president.name)
+  const presidentNames = unique(
+    presidentPool.map((president) => president.name),
+  )
   const orderLabels = presidentPool.map((president) =>
     toOrdinal(president.order),
   )
 
   return presidentPool.flatMap((president, index) => {
     const previousPresident = presidentPool[index - 1]
-    const neighboringPresidents = presidentPool
-      .filter(
-        (entry) =>
-          Math.abs(entry.order - president.order) <= 2 &&
-          entry.name !== president.name,
-      )
-      .map((entry) => entry.name)
+    const neighboringPresidents = presidentsNearOrder(president).map(
+      (entry) => entry.name,
+    )
+    const nearbyOrderLabels = presidentsNearOrder(president).map((entry) =>
+      toOrdinal(entry.order),
+    )
+    const eraPresidents = presidentsNearYears(president).map(
+      (entry) => entry.name,
+    )
 
     return [
       {
@@ -643,15 +890,17 @@ function buildPresidentQuestions() {
             : `${president.name} was which numbered president of the United States?`,
         choices:
           index % 2 === 0
-            ? buildChoices(
+            ? buildRankedChoices(
                 president.name,
-                presidentNames,
+                neighboringPresidents,
                 `${president.name}-order-name`,
+                presidentNames,
               )
-            : buildChoices(
+            : buildRankedChoices(
                 toOrdinal(president.order),
-                orderLabels,
+                nearbyOrderLabels,
                 `${president.name}-order-label`,
+                orderLabels,
               ),
         answer: index % 2 === 0 ? president.name : toOrdinal(president.order),
         explanation:
@@ -665,12 +914,11 @@ function buildPresidentQuestions() {
             category: "us-presidents",
             difficulty: "hard",
             prompt: `Who succeeded ${previousPresident.name} as president?`,
-            choices: buildChoices(
+            choices: buildRankedChoices(
               president.name,
-              neighboringPresidents.length >= 3
-                ? neighboringPresidents
-                : presidentNames,
+              neighboringPresidents,
               `${president.name}-succession`,
+              presidentNames,
             ),
             answer: president.name,
             explanation: `${president.name} followed ${previousPresident.name} in the presidency.`,
@@ -679,14 +927,21 @@ function buildPresidentQuestions() {
             id: `president-term-${president.order}`,
             category: "us-presidents",
             difficulty: "hard",
-            prompt: `Which president served from ${president.startYear} to ${president.endYear}?`,
-            choices: buildChoices(
+            prompt:
+              president.endYear === null
+                ? `Which president first took office in ${president.startYear}?`
+                : `Which president served from ${president.startYear} to ${president.endYear}?`,
+            choices: buildRankedChoices(
               president.name,
-              presidentNames,
+              eraPresidents,
               `${president.name}-term`,
+              presidentNames,
             ),
             answer: president.name,
-            explanation: `${president.name} served from ${president.startYear} to ${president.endYear}.`,
+            explanation:
+              president.endYear === null
+                ? `${president.name} first took office in ${president.startYear}.`
+                : `${president.name} served from ${president.startYear} to ${president.endYear}.`,
           },
     ]
   })
