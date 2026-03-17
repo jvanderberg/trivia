@@ -2,6 +2,11 @@
 
 Mobile-friendly trivia practice app built with React, Vite, shadcn, and Tailwind CSS v4.
 
+## Links
+
+- App: https://jvanderberg.github.io/trivia/
+- Repo: https://github.com/jvanderberg/trivia
+
 ## Stack
 
 - React 19
